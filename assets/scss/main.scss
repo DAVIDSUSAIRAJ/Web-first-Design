@@ -1,3 +1,96 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@800&family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@1,400;1,500&display=swap");
+$mukta: "Mukta Malar", sans-serif;
+$popins: "Poppins", sans-serif;
+$rubik: "Rubik", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mukta;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(238, 232, 232);
+  margin: 5px;
+  padding: 5px;
+
+  .nav--logo {
+    &__title {
+      font-weight: 700;
+      font-size: 30px;
+    }
+    @keyframes colorChange {
+      0% {
+        color: blue;
+      }
+
+      50% {
+        color: rgb(255, 11, 194);
+      }
+      100% {
+        color: rgb(238, 15, 15);
+      }
+    }
+    &__animate {
+      animation-name: colorChange;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      transition: 600ms;
+    }
+    @keyframes colorChange {
+      0% {
+        color: blue;
+      }
+      50% {
+        color: green;
+      }
+      75% {
+        color: red;
+      }
+      100% {
+        color: blue;
+      }
+    }
+  }
+
+  .nav--menu {
+    &--ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+    }
+    &__list a {
+      margin: 8px;
+      padding: 8px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: rgb(0, 0, 0);
+      transition: 300ms;
+    }
+    &__list a:hover {
+      color: blue;
+    }
+    &__list button {
+      background-color: rgb(58, 58, 184);
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      padding: 4px;
+      transition: 300ms;
+    }
+    &__list button:hover {
+      background-color: blue;
+    }
+    &__list button a {
+      padding: 5px;
+      color: white;
+    }
+    &__list button a:hover {
+      color: white;
+    }
+  }
 }

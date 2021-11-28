@@ -1,5 +1,87 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@800&family=Poppins:wght@100;200;300;400;500;600;700&family=Rubik:ital,wght@1,400;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mukta Malar", sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #eee8e8;
+  margin: 5px;
+  padding: 5px;
+}
+.header .nav--logo__title {
+  font-weight: 700;
+  font-size: 30px;
+}
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: #ff0bc2;
+  }
+  100% {
+    color: #ee0f0f;
+  }
+}
+.header .nav--logo__animate {
+  animation-name: colorChange;
+  animation-iteration-count: infinite;
+  animation-duration: 6s;
+  transition: 600ms;
+}
+@keyframes colorChange {
+  0% {
+    color: blue;
+  }
+  50% {
+    color: green;
+  }
+  75% {
+    color: red;
+  }
+  100% {
+    color: blue;
+  }
+}
+.header .nav--menu--ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+.header .nav--menu__list a {
+  margin: 8px;
+  padding: 8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  transition: 300ms;
+}
+.header .nav--menu__list a:hover {
+  color: blue;
+}
+.header .nav--menu__list button {
+  background-color: #3a3ab8;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 4px;
+  transition: 300ms;
+}
+.header .nav--menu__list button:hover {
+  background-color: blue;
+}
+.header .nav--menu__list button a {
+  padding: 5px;
+  color: white;
+}
+.header .nav--menu__list button a:hover {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
