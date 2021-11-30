@@ -1,15 +1,20 @@
+// POPINS AND MUKTA MALAR FONT-SIZE AND FOT-WEIGHT;
 @import url("https://fonts.googleapis.com/css2?family=Mukta+Malar:wght@800&family=Poppins:wght@100;200;300;400;500;600;700;800;900;&family=Rubik:ital,wght@1,400;1,500&display=swap");
 $mukta: "Mukta Malar", sans-serif;
 $popins: "Poppins", sans-serif;
 $rubik: "Rubik", sans-serif;
+//END POPINS AND MUKTA MALAR FONT-SIZE AND FOT-WEIGHT;
 
+// WEB RESETS
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $popins;
 }
+// END WEB RESETS
 
+//HEADER (NAV) SECTION
 .header {
   display: flex;
   justify-content: space-around;
@@ -97,8 +102,9 @@ $rubik: "Rubik", sans-serif;
     }
   }
 }
+// END HEADER(NAV) SECTION
 
-// hero content and image
+// HERO CONTENT AND IMAGES
 .hero {
   display: flex;
   justify-content: space-around;
@@ -109,177 +115,189 @@ $rubik: "Rubik", sans-serif;
   margin: auto;
   margin-top: 50px;
 
+  // SQUARE1 ANIMATES
   &--animate__square1 {
     top: 15%;
-  left: 18%;
-  width: 12px;
-  height: 12px;
-  border-radius: 30%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 18%;
+    width: 12px;
+    height: 12px;
+    border-radius: 30%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
   &--animate__square2 {
     bottom: 10%;
-  right: 15%;
-  width: 12px;
-  height: 12px;
-  border-radius: 30%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    right: 15%;
+    width: 12px;
+    height: 12px;
+    border-radius: 30%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
 
   &--animate__square3 {
     top: 10%;
-  right: 20%;
-  width: 12px;
-  height: 12px;
-  border-radius: 30%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    right: 20%;
+    width: 12px;
+    height: 12px;
+    border-radius: 30%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
+
+  // END SQUARE ANIMATES
+
+  // ANIMATE CIRCLES
   &--animate__circle1 {
     top: 35%;
-  left: 50%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
   &--animate__circle2 {
     bottom: 10%;
-  left: 20%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 20%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
   &--animate__circle3 {
     bottom: 50%;
-  right: 5%;
-  width: 120px;
-  height: 12px;
-  border-radius: 50%;
-  border: 2px solid red;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: animatable;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    right: 5%;
+    width: 120px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid red;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: animatable;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
+  // END CIRCLE ANIMATES
 
+  // ANIMATE HEARS
   &--animate__heart1 {
     bottom: 20%;
-  left: 50%;
-  color: blue;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: heart;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 50%;
+    color: blue;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
   &--animate__heart2 {
     top: 10%;
-  left: 50%;
-  color: blue;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: heart;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 50%;
+    color: blue;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
   &--animate__heart3 {
     bottom: 50%;
-  left: 14%;
-  color: blue;
-  transform: rotate(360deg);
-  position: absolute;
-  animation-name: heart;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-transition: 300ms;
+    left: 14%;
+    color: blue;
+    transform: rotate(360deg);
+    position: absolute;
+    animation-name: heart;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: 300ms;
     z-index: -1;
   }
+
+  // END ANIMATE HEARTS
+
+  // ANIMATION SQUARE AND CIRCLES @KEYFRAMES
   @keyframes animatable {
-    0%{
+    0% {
       border: 2px solid red;
       transform: rotate(0deg);
-
     }
-    50%{
-      border:2px solid springgreen;
+    50% {
+      border: 2px solid springgreen;
       transform: rotate(180deg);
     }
-    100%{
+    100% {
       border: 2px solid blue;
       transform: rotate(360deg);
     }
   }
 
+  // END ANIMATON SQUARE AND CIRCLES @KEYFRAMES
 
- 
+  // ANIMATION HEART @KEYFRAMES
   @keyframes heart {
-    0%{
-    color: rgb(255, 0, 0);
+    0% {
+      color: rgb(255, 0, 0);
       transform: rotate(0deg);
-
     }
-    50%{
-     color: green;
+    50% {
+      color: green;
       transform: rotate(180deg);
     }
-    100%{
-     color:blue;
+    100% {
+      color: blue;
       transform: rotate(360deg);
     }
   }
+  // END ANIMATION HEART @KEYFRAMES
 
+  // HERO DESCRIPTION AND TITLE
 
   &-des {
     width: 350px;
@@ -295,6 +313,10 @@ transition: 300ms;
       }
     }
   }
+
+  // END HERO DISCREPTION AND TITLE
+
+  // HERO DESC PARA
   .hero-desc__para {
     margin-top: 30px;
 
@@ -305,6 +327,9 @@ transition: 300ms;
 
     text-align: justify;
   }
+  // HERO END DESC PARA
+
+  // HERO VIDEO AND TEXT BUTTONS
   .hero-buttons {
     margin: 15px;
     &__video {
@@ -322,9 +347,7 @@ transition: 300ms;
         padding-right: 5px;
       }
     }
-    // &__text{
-    //   @extend .hero-buttons__video;
-    // }
+
     &__text {
       padding: 10px;
       font-size: 12px;
@@ -340,9 +363,52 @@ transition: 300ms;
       }
     }
   }
+  // END HERO VIDEO AND TEXT BUTTONS
 
+  //  DON- IMAGES
   &-image-don {
     width: 30rem;
     height: auto;
   }
 }
+// END HERO AND CONTENT IMAGES
+.about {
+  margin: auto;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+
+  &--image {
+    padding: 5px;
+    margin-left: 10rem;
+    width: 50%;
+    &1 {
+      width: 30rem;
+    }
+  }
+
+  &-desc {
+    width: 60%;
+    h1 {
+      color: #cfcfcf;
+    }
+    P {
+      margin-top: 8px;
+      color: rgb(179, 171, 171);
+      line-height: 25px;
+      a {
+        color: rgb(216, 203, 203);
+        transition: 300ms;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
+
+// ABOUT IMAGES AND DESCRIPTON
+
+// END ABOUT IMAGES AND DESCRIPTION

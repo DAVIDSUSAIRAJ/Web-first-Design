@@ -318,4 +318,39 @@
   height: auto;
 }
 
+.about {
+  margin: auto;
+  background-color: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+}
+.about--image {
+  padding: 5px;
+  margin-left: 10rem;
+  width: 50%;
+}
+.about--image1 {
+  width: 30rem;
+}
+.about-desc {
+  width: 60%;
+}
+.about-desc h1 {
+  color: #cfcfcf;
+}
+.about-desc P {
+  margin-top: 8px;
+  color: #b3abab;
+  line-height: 25px;
+}
+.about-desc P a {
+  color: #d8cbcb;
+  transition: 300ms;
+}
+.about-desc P a:hover {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
