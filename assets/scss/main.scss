@@ -374,11 +374,12 @@ $rubik: "Rubik", sans-serif;
 // END HERO AND CONTENT IMAGES
 .about {
   margin: auto;
-  background-color: blue;
+  background-color: rgb(53, 53, 204);
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
+  margin-top: 5.3rem;
 
   &--image {
     padding: 5px;
