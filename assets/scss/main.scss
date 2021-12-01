@@ -28,18 +28,18 @@ $rubik: "Rubik", sans-serif;
       font-weight: 900;
       font-size: 23px;
     }
-    @keyframes colorChange {
-      0% {
-        color: blue;
-      }
+    // @keyframes colorChange {
+    //   0% {
+    //     color: blue;
+    //   }
 
-      50% {
-        color: rgb(255, 11, 194);
-      }
-      100% {
-        color: rgb(238, 15, 15);
-      }
-    }
+    //   50% {
+    //     color: rgb(255, 11, 194);
+    //   }
+    //   100% {
+    //     color: rgb(238, 15, 15);
+    //   }
+    // }
     &__animate {
       font-family: $mukta;
       animation-name: colorChange;
@@ -391,7 +391,8 @@ $rubik: "Rubik", sans-serif;
   }
 
   &-desc {
-    width: 60%;
+    width: 50%;
+    margin-right: 70px;
     h1 {
       color: #cfcfcf;
     }
@@ -399,6 +400,7 @@ $rubik: "Rubik", sans-serif;
       margin-top: 8px;
       color: rgb(179, 171, 171);
       line-height: 25px;
+      text-align: justify;
       a {
         color: rgb(216, 203, 203);
         transition: 300ms;
@@ -409,7 +411,154 @@ $rubik: "Rubik", sans-serif;
     }
   }
 }
+// THIS IS ROADMAP
+.road-map {
+  width: 100%;
+  height: 500px;
 
-// ABOUT IMAGES AND DESCRIPTON
+  // ROAD MAP CONTENT
 
-// END ABOUT IMAGES AND DESCRIPTION
+  &--content {
+    margin-top: 6rem;
+    // color: red;
+    text-align: center;
+
+    h1 {
+      font-family: $popins;
+      color: rgb(14, 14, 15);
+      font-weight: 900;
+      font-size: 18px;
+      padding: 5px;
+      margin: 5px;
+    }
+
+    P {
+      color: gray;
+      font-size: 13px;
+      margin: 5px;
+      padding: 5px;
+      padding-bottom: 20px;
+    }
+
+    .line {
+      margin-top: 20px;
+      width: 95px;
+      height: 8px;
+
+      border-radius: 20px;
+      margin: auto;
+      background-image: linear-gradient(
+        to right,
+        rgb(197, 61, 84),
+        rgb(54, 54, 200)
+      );
+    }
+  }
+
+  // END ROAD MAP CONTENT
+
+  // START ROADMAP ITEMS
+
+  .road-map--items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    position: relative;
+    width: 85%;
+
+    &1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      filter: grayscale(100%);
+    }
+
+    &__structure {
+      position: relative;
+      margin-top: 2rem;
+      width: 60%;
+      cursor: pointer;
+      img {
+        width: 45px;
+        margin: 2rem;
+        margin-left: 42px;
+      }
+      h3 {
+        font-weight: 400px;
+        font-size: 18px;
+        color: blue;
+        margin-top: 10px;
+      }
+
+      P {
+        color: gray;
+        font-size: 15px;
+        margin-top: 10px;
+        font-weight: 200;
+        line-height: 18px;
+      }
+    }
+
+    &__border {
+      position: absolute;
+      top: 10px;
+      left: 25px;
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 4px dotted rgb(35, 16, 212);
+      transform: rotate(360deg);
+      margin: auto;
+      transition: 400ms;
+    }
+  }
+
+  .road-map--items__rightarrow {
+    .fas5 {
+      position: absolute;
+      color: blue;
+      font-weight: 600;
+      right: 30px;
+      cursor: pointer;
+      transition: 400ms;
+    }
+    .fasjs {
+      visibility: hidden;
+      transition: 600ms;
+    }
+  }
+
+  .road-map--items1:hover {
+    filter: grayscale(0%);
+    .fas5 {
+      right: -30px;
+    }
+    .fasjs {
+      visibility: visible;
+    }
+
+    .road-map--items__border {
+      animation-name: dotAnimation;
+      animation-duration: 400ms;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      @keyframes dotAnimation {
+        0% {
+          transform: rotate(0deg);
+          border-color: blue;
+        }
+        50% {
+          transform: rotate(180deg);
+          border-color: blue;
+        }
+        100% {
+          transform: rotate(360deg);
+          border-color: blue;
+        }
+      }
+    }
+  }
+}
+
+// THIS IS END ROADMAP
