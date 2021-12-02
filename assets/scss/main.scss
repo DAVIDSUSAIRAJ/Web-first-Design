@@ -414,7 +414,7 @@ $rubik: "Rubik", sans-serif;
 // THIS IS ROADMAP
 .road-map {
   width: 100%;
-  height: 500px;
+  height: 450px;
 
   // ROAD MAP CONTENT
 
@@ -463,7 +463,7 @@ $rubik: "Rubik", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 8rem;
+    margin-left: 10rem;
     position: relative;
     width: 85%;
 
@@ -502,7 +502,7 @@ $rubik: "Rubik", sans-serif;
 
     &__border {
       position: absolute;
-      top: 10px;
+      top: 14px;
       left: 25px;
       width: 80px;
       height: 80px;

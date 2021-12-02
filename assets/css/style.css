@@ -347,7 +347,7 @@
 
 .road-map {
   width: 100%;
-  height: 500px;
+  height: 450px;
 }
 .road-map--content {
   margin-top: 6rem;
@@ -380,7 +380,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 8rem;
+  margin-left: 10rem;
   position: relative;
   width: 85%;
 }
@@ -416,7 +416,7 @@
 }
 .road-map .road-map--items__border {
   position: absolute;
-  top: 10px;
+  top: 14px;
   left: 25px;
   width: 80px;
   height: 80px;
