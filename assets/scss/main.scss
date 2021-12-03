@@ -661,3 +661,85 @@ $rubik: "Rubik", sans-serif;
 }
 
 //COURSES END CARDS
+
+// CONTACT FORM
+.contact {
+  background-color: rgb(212, 219, 211);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+
+  &-card {
+    width: 70%;
+    height: 70%;
+    background-color: rgb(242, 243, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+
+    &--form {
+      flex-grow: 1;
+      height: 100%;
+      padding: 20px;
+      background-color: rgb(241, 241, 236);
+
+      h4 {
+        padding: 3px;
+        padding-left: 5px;
+      }
+      p {
+        font-size: 14px;
+        font-weight: 200;
+        padding-left: 5px;
+        margin-bottom: 10px;
+        color: rgb(165, 162, 162);
+      }
+      .name,
+      .email,
+      .subject,
+      .textarea {
+        margin: 5px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        outline: none;
+        border-radius: 5px;
+        background-color: rgb(219, 214, 214);
+        &:focus {
+          border: 2px solid blue;
+        }
+      }
+      // .name:focus {
+      //   outline: 2px solid red;
+      // }
+
+      .textarea {
+        resize: none;
+        height: 150px;
+        font-size: 14px;
+      }
+      .send-btn {
+        padding: 8px 15px;
+        margin-left: 5px;
+        outline: none;
+        border: none;
+        color: rgb(255, 255, 255);
+        background-color: rgb(18, 18, 243);
+        border-radius: 5px;
+        font-size: 15px;
+      }
+    }
+    &--img {
+      img {
+        width: 400px;
+        padding-right: 60px;
+      }
+    }
+  }
+}
+
+// END CONTACT FORM
