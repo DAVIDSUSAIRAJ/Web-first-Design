@@ -1,0 +1,78 @@
+// ABOUT PAGES
+.about {
+  margin: auto;
+  background-color: rgb(53, 53, 204);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 5.3rem;
+
+  &--image {
+    padding: 5px;
+    margin-left: 10rem;
+    width: 50%;
+    &1 {
+      width: 30rem;
+    }
+  }
+
+  &-desc {
+    width: 50%;
+    margin-right: 70px;
+    h1 {
+      color: #cfcfcf;
+    }
+    P {
+      margin-top: 8px;
+      color: rgb(179, 171, 171);
+      line-height: 25px;
+      text-align: justify;
+      a {
+        color: rgb(216, 203, 203);
+        transition: 300ms;
+      }
+      a:hover {
+        color: white;
+      }
+    }
+  }
+}
+// END ABOUT
+
+//MOBILE DEVIECE ABOUT PAGE IN MEDIA QUEIRIES
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .about {
+    background-color: rgb(61, 9, 248);
+    flex-direction: column;
+    margin-top: 60px !important;
+    border-radius: 6px;
+
+    &--image {
+      margin-right: 18rem;
+
+      &1 {
+        margin-top: 20px;
+        width: 250px;
+      }
+    }
+    &-desc {
+      width: 250px;
+      margin-top: 30px !important;
+      margin: auto;
+
+      h1 {
+        font-size: 20px;
+        line-height: 28px;
+      }
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        padding-top: 8px;
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+// END MOBILE DEVICE ABOUT PAGE ISN MEDIA QUEIRIES

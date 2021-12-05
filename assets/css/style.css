@@ -75,7 +75,33 @@
 .header .nav--menu__list button a:hover {
   color: white;
 }
+.header .nav--menu__icon {
+  display: none;
+}
 
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .header {
+    background-color: #f9fff8;
+    margin-bottom: 0px !important;
+  }
+
+  .nav--logo__title {
+    color: #181616;
+    font-size: 19px !important;
+  }
+  .nav--logo__animate {
+    font-size: 10px;
+  }
+
+  .nav--menu {
+    display: none;
+  }
+
+  .nav--menu__icon {
+    font-size: 25px;
+    display: block !important;
+  }
+}
 .hero {
   display: flex;
   justify-content: space-around;
@@ -307,6 +333,60 @@
   height: auto;
 }
 
+@media only screen and (min-width: 206px) and (max-width: 576px) {
+  .hero {
+    background-color: white;
+    flex-direction: column;
+    margin-top: 20px !important;
+  }
+
+  .hero--animate {
+    display: none !important;
+  }
+
+  .hero-des__title {
+    font-size: 19px;
+    font-weight: 600;
+    margin-left: 70px !important;
+    line-height: 32px;
+    width: 200px;
+    margin: auto;
+  }
+
+  .hero-des__title__tamil {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600 !important;
+  }
+
+  .hero-image-don {
+    width: 280px;
+    margin-top: 30px;
+  }
+
+  .hero-desc__para {
+    font-size: 15px !important;
+    font-weight: 400;
+    line-height: 29px !important;
+    margin-top: 6px !important;
+    width: 260px;
+    margin: auto;
+  }
+
+  .hero-buttons {
+    margin-top: 30px !important;
+    margin-left: 60px !important;
+  }
+  .hero-buttons__video {
+    font-size: 8px !important;
+    font-weight: 200;
+    padding: 8px !important;
+  }
+  .hero-buttons__text {
+    font-size: 10px !important;
+    padding: 6px !important;
+  }
+}
 .about {
   margin: auto;
   background-color: #3535cc;
@@ -345,6 +425,36 @@
   color: white;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .about {
+    background-color: #3d09f8;
+    flex-direction: column;
+    margin-top: 60px !important;
+    border-radius: 6px;
+  }
+  .about--image {
+    margin-right: 18rem;
+  }
+  .about--image1 {
+    margin-top: 20px;
+    width: 250px;
+  }
+  .about-desc {
+    width: 250px;
+    margin-top: 30px !important;
+    margin: auto;
+  }
+  .about-desc h1 {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .about-desc p {
+    font-size: 15px;
+    font-weight: 300;
+    padding-top: 8px;
+    padding-bottom: 30px;
+  }
+}
 .road-map {
   width: 100%;
   height: 450px;
@@ -430,7 +540,7 @@
   position: absolute;
   color: blue;
   font-weight: 600;
-  right: 30px;
+  right: 20px;
   cursor: pointer;
   transition: 400ms;
 }
@@ -441,8 +551,10 @@
 .road-map .road-map--items1:hover {
   filter: grayscale(0%);
 }
-.road-map .road-map--items1:hover .fas5 {
-  right: -30px;
+@media only screen and (min-width: 768px) {
+  .road-map .road-map--items1:hover .fas5 {
+    right: -20px;
+  }
 }
 .road-map .road-map--items1:hover .fasjs {
   visibility: visible;
@@ -468,6 +580,53 @@
   }
 }
 
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .road-map {
+    flex-direction: column;
+    margin-top: -50px;
+  }
+
+  .road-map--items {
+    flex-direction: column;
+  }
+
+  .road-map--items1 {
+    flex-direction: column !important;
+    position: relative;
+  }
+
+  .road-map--items__structure {
+    width: 400px !important;
+    margin: 80px 0px;
+  }
+  .road-map--items__structure p {
+    width: 200px;
+  }
+
+  .road-map--items__rightarrow {
+    padding: 10px 0px;
+    position: absolute;
+    left: 93px;
+    top: 230px;
+    transition: 500ms;
+  }
+
+  .fas5 {
+    transform: rotate(89deg);
+  }
+
+  .fasjs {
+    position: absolute;
+    left: -50px;
+    padding: 10px;
+  }
+
+  .road-map--items1:hover .road-map--items__rightarrow {
+    position: absolute;
+    left: 93px;
+    top: 280px;
+  }
+}
 .courses {
   width: 100%;
   height: 700px;
@@ -544,6 +703,17 @@
   text-shadow: 2px 2px 10px black;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .courses {
+    background-color: orangered;
+    flex-direction: column !important;
+    margin-top: 800px;
+  }
+
+  .courses--body {
+    flex-direction: column;
+  }
+}
 .contact {
   background-color: #d4dbd3;
   display: flex;
@@ -617,6 +787,15 @@
   padding-right: 60px;
 }
 
+@media only screen and (min-width: 200px) and (max-width: 500px) {
+  .contact {
+    background-color: orchid;
+  }
+
+  .contact-card {
+    flex-direction: column;
+  }
+}
 .footer {
   width: 100%;
   text-align: center;

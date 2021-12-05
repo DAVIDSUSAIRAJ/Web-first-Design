@@ -1,0 +1,106 @@
+// HEADER NAV SECTION
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgb(238, 232, 232);
+  margin: 5px;
+  padding: 5px;
+
+  .nav--logo {
+    &__title {
+      font-weight: 900;
+      font-size: 23px;
+    }
+
+    &__animate {
+      font-family: $mukta;
+      animation-name: colorChange;
+      animation-iteration-count: infinite;
+      animation-duration: 6s;
+      transition: 600ms;
+    }
+    @keyframes colorChange {
+      0% {
+        color: blue;
+      }
+      50% {
+        color: green;
+      }
+      75% {
+        color: red;
+      }
+      100% {
+        color: blue;
+      }
+    }
+  }
+
+  .nav--menu {
+    &--ul {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+    }
+    &__list a {
+      margin: 8px;
+      padding: 8px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 13px;
+      color: rgb(0, 0, 0);
+      transition: 300ms;
+    }
+    &__list a:hover {
+      color: blue;
+    }
+    &__list button {
+      background-color: rgb(45, 45, 233);
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      padding: 10px;
+      transition: 300ms;
+    }
+    &__list button:hover {
+      background-color: rgb(44, 44, 168);
+    }
+    &__list button a {
+      padding: 5px;
+      color: white;
+    }
+    &__list button a:hover {
+      color: white;
+    }
+  }
+  .nav--menu__icon {
+    display: none;
+  }
+}
+// END HEADER NAV SECTION;
+
+//MOBILE DEVICE MEDIA QUERIES
+@media only screen and (min-width: 300px) and (max-width: 576px) {
+  .header {
+    background-color: rgb(249, 255, 248);
+    margin-bottom: 0px !important;
+  }
+  .nav--logo {
+    &__title {
+      color: rgb(24, 22, 22);
+      font-size: 19px !important;
+    }
+    &__animate {
+      font-size: 10px;
+    }
+  }
+  .nav--menu {
+    display: none;
+  }
+  .nav--menu__icon {
+    font-size: 25px;
+    display: block !important;
+  }
+}
+//END MOBILE DEVICE MEDIA QURIES
