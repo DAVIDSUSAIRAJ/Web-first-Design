@@ -64,9 +64,13 @@
         outline: none;
         border: none;
         color: rgb(255, 255, 255);
-        background-color: rgb(18, 18, 243);
+        background-color: rgb(31, 31, 235);
         border-radius: 5px;
         font-size: 15px;
+        cursor: pointer;
+        &:hover {
+          background-color: rgb(0, 0, 255);
+        }
       }
     }
     &--img {
@@ -80,13 +84,24 @@
 // END CONTACT FORM
 // MOBILE  DEVICE RESPONSIVE CONTACTFORM
 
-@media only screen and (min-width: 200px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 576px) {
   .contact {
-    background-color: orchid;
-    // flex-direction: column;
-  }
-  .contact-card {
-    flex-direction: column;
+    margin-top: 20px;
+
+    &-card {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      &--form {
+        width: 100%;
+        padding: 5%;
+      }
+      &--img {
+        img {
+          width: 250px;
+        }
+      }
+    }
   }
 }
 // END MOBILE DEVICE RESPONSIVE CONTACTFORM

@@ -79,7 +79,7 @@
   display: none;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 576px) {
+@media only screen and (min-width: 200px) and (max-width: 576px) {
   .header {
     background-color: #f9fff8;
     margin-bottom: 0px !important;
@@ -96,7 +96,6 @@
   .nav--menu {
     display: none;
   }
-
   .nav--menu__icon {
     font-size: 25px;
     display: block !important;
@@ -339,11 +338,9 @@
     flex-direction: column;
     margin-top: 20px !important;
   }
-
   .hero--animate {
     display: none !important;
   }
-
   .hero-des__title {
     font-size: 19px;
     font-weight: 600;
@@ -352,18 +349,11 @@
     width: 200px;
     margin: auto;
   }
-
   .hero-des__title__tamil {
     padding: 5px;
     font-size: 15px;
     font-weight: 600 !important;
   }
-
-  .hero-image-don {
-    width: 280px;
-    margin-top: 30px;
-  }
-
   .hero-desc__para {
     font-size: 15px !important;
     font-weight: 400;
@@ -373,12 +363,17 @@
     margin: auto;
   }
 
+  .hero-image-don {
+    width: 280px;
+    margin-top: 30px;
+  }
+
   .hero-buttons {
     margin-top: 30px !important;
     margin-left: 60px !important;
   }
   .hero-buttons__video {
-    font-size: 8px !important;
+    font-size: 10px !important;
     font-weight: 200;
     padding: 8px !important;
   }
@@ -585,11 +580,9 @@
     flex-direction: column;
     margin-top: -50px;
   }
-
   .road-map--items {
     flex-direction: column;
   }
-
   .road-map--items1 {
     flex-direction: column !important;
     position: relative;
@@ -705,13 +698,47 @@
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
   .courses {
-    background-color: orangered;
+    height: 1750px;
+    background-color: #1f10eb;
     flex-direction: column !important;
-    margin-top: 800px;
+    margin-top: 700px;
+    border-radius: 8px;
+  }
+
+  .courses--header h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .courses--header p {
+    font-size: 13px;
+    font-weight: 200;
+    padding: 0px 10px;
   }
 
   .courses--body {
     flex-direction: column;
+    background-color: #1f10eb;
+  }
+
+  .courses--body__card {
+    margin-bottom: 20px;
+  }
+
+  .courses--body__card__atag__img__ui {
+    width: 280px;
+  }
+
+  .courses--body__card__atag__desc p {
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 4px;
+    padding-bottom: 30px;
+  }
+
+  .courses--footer {
+    font-size: 15px;
+    font-weight: 200;
+    margin: 20px;
   }
 }
 .contact {
@@ -778,22 +805,34 @@
   outline: none;
   border: none;
   color: white;
-  background-color: #1212f3;
+  background-color: #1f1feb;
   border-radius: 5px;
   font-size: 15px;
+  cursor: pointer;
+}
+.contact-card--form .send-btn:hover {
+  background-color: blue;
 }
 .contact-card--img img {
   width: 400px;
   padding-right: 60px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 500px) {
+@media only screen and (min-width: 200px) and (max-width: 576px) {
   .contact {
-    background-color: orchid;
+    margin-top: 20px;
   }
-
   .contact-card {
     flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+  .contact-card--form {
+    width: 100%;
+    padding: 5%;
+  }
+  .contact-card--img img {
+    width: 250px;
   }
 }
 .footer {
@@ -842,6 +881,30 @@
   color: #afaaaa;
   font-size: 12px;
   font-weight: 400;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .footer {
+    border-radius: 8px;
+    margin-top: 18px;
+  }
+  .footer--header {
+    margin-top: 10px;
+  }
+  .footer--header h4 {
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footer--header h4 .fa-smile {
+    color: yellow;
+  }
+  .footer--header p {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .footer--body a i {
+    font-size: 15px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -56,3 +56,33 @@
   }
 }
 // END FOOTER
+
+// MOBILE DEVICE MEDIAQUERY FOOTER
+@media only screen and (min-width: 200px) and (max-width: 576px) {
+  .footer {
+    border-radius: 8px;
+    margin-top: 18px;
+
+    &--header {
+      margin-top: 10px;
+
+      h4 {
+        font-size: 15px;
+        font-weight: 400;
+        .fa-smile {
+          color: yellow;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &--body {
+      a i {
+        font-size: 15px;
+      }
+    }
+  }
+}
+// END MOBILE DEVICE MEDIA QUERY FOOTER
