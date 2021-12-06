@@ -85,6 +85,8 @@
   .header {
     background-color: rgb(249, 255, 248);
     margin-bottom: 0px !important;
+    display: flex;
+    align-items: center;
   }
   .nav--logo {
     &__title {

@@ -83,6 +83,8 @@
   .header {
     background-color: #f9fff8;
     margin-bottom: 0px !important;
+    display: flex;
+    align-items: center;
   }
 
   .nav--logo__title {
@@ -580,9 +582,11 @@
     flex-direction: column;
     margin-top: -50px;
   }
+
   .road-map--items {
     flex-direction: column;
   }
+
   .road-map--items1 {
     flex-direction: column !important;
     position: relative;

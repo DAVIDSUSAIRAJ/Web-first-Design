@@ -157,13 +157,14 @@
   .road-map {
     flex-direction: column;
     margin-top: -50px;
-    &--items {
-      flex-direction: column;
-    }
-    &--items1 {
-      flex-direction: column !important;
-      position: relative;
-    }
+  }
+  .road-map--items {
+    flex-direction: column;
+  }
+  .road-map--items1 {
+    flex-direction: column !important;
+    position: relative;
+    // width: 570px;
   }
   .road-map--items__structure {
     width: 400px !important;
