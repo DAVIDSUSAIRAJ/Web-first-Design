@@ -79,17 +79,20 @@
   display: none;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header {
     background-color: #f9fff8;
-    margin-bottom: 0px !important;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
+  .nav--logo {
+    padding: 9px;
+  }
   .nav--logo__title {
     color: #181616;
-    font-size: 19px !important;
+    font-size: 18px !important;
   }
   .nav--logo__animate {
     font-size: 10px;
@@ -99,6 +102,7 @@
     display: none;
   }
   .nav--menu__icon {
+    padding: 9px;
     font-size: 25px;
     display: block !important;
   }
@@ -109,8 +113,6 @@
   align-items: center;
   margin: 5px;
   padding: 5px;
-  width: 90%;
-  margin: auto;
   margin-top: 50px;
 }
 .hero--animate__square1 {
@@ -334,54 +336,53 @@
   height: auto;
 }
 
-@media only screen and (min-width: 206px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .hero {
     background-color: white;
     flex-direction: column;
-    margin-top: 20px !important;
+    margin-top: 8px !important;
   }
   .hero--animate {
     display: none !important;
   }
+  .hero-des {
+    width: 250px;
+  }
   .hero-des__title {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: 600;
-    margin-left: 70px !important;
     line-height: 32px;
-    width: 200px;
+    max-width: 200px;
     margin: auto;
   }
   .hero-des__title__tamil {
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 600 !important;
+    padding: 6px;
+    font-size: 13px;
   }
   .hero-desc__para {
     font-size: 15px !important;
     font-weight: 400;
-    line-height: 29px !important;
-    margin-top: 6px !important;
-    width: 260px;
+    line-height: 22px !important;
+    margin-top: 5px !important;
+    max-width: 250px;
     margin: auto;
   }
-
-  .hero-image-don {
-    width: 280px;
-    margin-top: 30px;
-  }
-
   .hero-buttons {
-    margin-top: 30px !important;
-    margin-left: 60px !important;
+    margin-top: 20px !important;
+    margin-left: 20px !important;
   }
   .hero-buttons__video {
     font-size: 10px !important;
-    font-weight: 200;
+    font-weight: 100 !important;
     padding: 8px !important;
   }
   .hero-buttons__text {
     font-size: 10px !important;
-    padding: 6px !important;
+    padding: 8px !important;
+  }
+  .hero-image-don {
+    max-width: 250px;
+    margin-top: 20px;
   }
 }
 .about {
@@ -422,39 +423,36 @@
   color: white;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .about {
     background-color: #3d09f8;
     flex-direction: column;
-    margin-top: 60px !important;
+    margin-top: 40px;
     border-radius: 6px;
   }
   .about--image {
     margin-right: 18rem;
   }
   .about--image1 {
-    margin-top: 20px;
-    width: 250px;
+    margin-top: 10px;
+    max-width: 250px;
   }
   .about-desc {
     width: 250px;
-    margin-top: 30px !important;
+    margin-top: 20px !important;
     margin: auto;
   }
   .about-desc h1 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 28px;
   }
   .about-desc p {
-    font-size: 15px;
-    font-weight: 300;
-    padding-top: 8px;
-    padding-bottom: 30px;
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 29px;
+    padding-top: 4px;
+    padding-bottom: 20px;
   }
-}
-.road-map {
-  width: 100%;
-  height: 450px;
 }
 .road-map--content {
   margin-top: 6rem;
@@ -487,9 +485,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10rem;
   position: relative;
-  width: 85%;
 }
 .road-map .road-map--items1 {
   display: flex;
@@ -499,8 +495,7 @@
 }
 .road-map .road-map--items__structure {
   position: relative;
-  margin-top: 2rem;
-  width: 60%;
+  margin-top: 2.8rem;
   cursor: pointer;
 }
 .road-map .road-map--items__structure img {
@@ -520,6 +515,7 @@
   margin-top: 10px;
   font-weight: 200;
   line-height: 18px;
+  width: 200px;
 }
 .road-map .road-map--items__border {
   position: absolute;
@@ -530,7 +526,6 @@
   border-radius: 50%;
   border: 4px dotted #2310d4;
   transform: rotate(360deg);
-  margin: auto;
   transition: 400ms;
 }
 .road-map .road-map--items__rightarrow .fas5 {
@@ -577,56 +572,46 @@
   }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .road-map {
-    flex-direction: column;
-    margin-top: -50px;
+    margin-bottom: 150px;
   }
-
   .road-map--items {
     flex-direction: column;
+    margin-left: 60px;
   }
-
-  .road-map--items1 {
+  .road-map--items .road-map--items1 {
     flex-direction: column !important;
+    margin-bottom: 55px;
     position: relative;
   }
-
-  .road-map--items__structure {
-    width: 400px !important;
-    margin: 80px 0px;
-  }
-  .road-map--items__structure p {
+  .road-map--items .road-map--items__structure p {
     width: 200px;
   }
-
-  .road-map--items__rightarrow {
-    padding: 10px 0px;
+  .road-map--items .road-map--items__rightarrow {
     position: absolute;
     left: 93px;
-    top: 230px;
+    top: 250px;
     transition: 500ms;
   }
-
-  .fas5 {
+  .road-map--items .fas5 {
     transform: rotate(89deg);
   }
-
-  .fasjs {
+  .road-map--items .fasjs {
     position: absolute;
     left: -50px;
     padding: 10px;
+    margin-bottom: 80px;
   }
-
-  .road-map--items1:hover .road-map--items__rightarrow {
+  .road-map--items .road-map--items1:hover .road-map--items__rightarrow {
     position: absolute;
     left: 93px;
-    top: 280px;
+    top: 300px;
   }
 }
 .courses {
   width: 100%;
-  height: 700px;
+  height: auto;
   background-color: #1919d6;
 }
 .courses--header {
@@ -702,47 +687,42 @@
 
 @media only screen and (min-width: 200px) and (max-width: 576px) {
   .courses {
-    height: 1750px;
     background-color: #1f10eb;
-    flex-direction: column !important;
-    margin-top: 700px;
+    margin-top: 10px;
     border-radius: 8px;
   }
-
-  .courses--header h3 {
-    font-size: 20px;
-    font-weight: 400;
+  .courses .courses--header h3 {
+    color: #cfcfcf;
+    font-size: 18px;
+    font-weight: 300;
   }
-  .courses--header p {
+  .courses .courses--header p {
     font-size: 13px;
     font-weight: 200;
     padding: 0px 10px;
+    color: b3abab;
+    line-height: 20px;
   }
-
   .courses--body {
     flex-direction: column;
-    background-color: #1f10eb;
+    background-color: #3d09f8;
   }
-
   .courses--body__card {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
   }
-
   .courses--body__card__atag__img__ui {
     width: 280px;
   }
-
   .courses--body__card__atag__desc p {
     font-size: 15px;
     line-height: 24px;
     margin-top: 4px;
     padding-bottom: 30px;
   }
-
-  .courses--footer {
+  .courses .courses--footer {
     font-size: 15px;
     font-weight: 200;
-    margin: 20px;
+    padding: 20px;
   }
 }
 .contact {
@@ -822,7 +802,7 @@
   padding-right: 60px;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .contact {
     margin-top: 20px;
   }
@@ -843,7 +823,7 @@
   width: 100%;
   text-align: center;
   height: 190px;
-  background-color: #1227e6;
+  background-color: #3d09f8;
 }
 .footer--header h4 {
   color: #e9e3e3;

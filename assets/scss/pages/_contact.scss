@@ -6,6 +6,7 @@
   align-items: center;
   width: 100%;
   height: 600px;
+  
 
   &-card {
     width: 70%;
@@ -84,7 +85,7 @@
 // END CONTACT FORM
 // MOBILE  DEVICE RESPONSIVE CONTACTFORM
 
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .contact {
     margin-top: 20px;
 

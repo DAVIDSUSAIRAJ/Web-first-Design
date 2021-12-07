@@ -81,17 +81,18 @@
 // END HEADER NAV SECTION;
 
 //MOBILE DEVICE MEDIA QUERIES
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .header {
     background-color: rgb(249, 255, 248);
-    margin-bottom: 0px !important;
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
   .nav--logo {
+    padding: 9px;
     &__title {
       color: rgb(24, 22, 22);
-      font-size: 19px !important;
+      font-size: 18px !important;
     }
     &__animate {
       font-size: 10px;
@@ -100,6 +101,7 @@
   .nav--menu {
     display: none;
     &__icon {
+      padding: 9px;
       font-size: 25px;
       display: block !important;
     }
