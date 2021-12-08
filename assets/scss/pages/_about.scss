@@ -7,7 +7,6 @@
   align-items: center;
   padding: 1rem;
   margin-top: 5.3rem;
-  
 
   &--image {
     padding: 5px;
@@ -41,7 +40,7 @@
 }
 // END ABOUT
 
-//MOBILE DEVIECE ABOUT PAGE IN MEDIA QUEIRIES
+//MOBILE DEVIECE ABOUT PAGE IN MEDIA QUERY
 @media only screen and (max-width: 576px) {
   .about {
     background-color: rgb(61, 9, 248);
@@ -67,6 +66,7 @@
         line-height: 28px;
       }
       p {
+        width: 250px;
         font-size: 16px;
         font-weight: 200;
         line-height: 29px;
@@ -77,4 +77,45 @@
   }
 }
 
-// END MOBILE DEVICE ABOUT PAGE ISN MEDIA QUEIRIES
+// END MOBILE DEVICE ABOUT PAGE ISN MEDIA QUERY
+
+// ABOUT LANDSCAPE MODE IN MEDIA QUERY
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .about {
+    background-color: rgb(61, 9, 248);
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 6px;
+
+    &--image {
+      margin-right: 18rem;
+
+      &1 {
+        margin-top: 10px;
+        max-width: 400px;
+      }
+    }
+    &-desc {
+      width: 350px;
+      margin-top: 20px !important;
+      margin: auto;
+
+      h1 {
+        font-size: 25px;
+        line-height: 28px;
+        padding: 10px 0px;
+      }
+      p {
+        width: 350px;
+        font-size: 16px;
+        font-weight: 200;
+        line-height: 30px;
+        padding-top: 4px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// END ABOUT LANDSCAPE MODE IN MEDIA QUERY

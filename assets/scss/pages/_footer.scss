@@ -59,10 +59,10 @@
 // END FOOTER
 
 // MOBILE DEVICE MEDIAQUERY FOOTER
-@media only screen and (min-width: 200px) and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .footer {
     border-radius: 8px;
-    margin-top: 18px;
+    // margin-top: 18px;
 
     &--header {
       margin-top: 10px;
@@ -87,3 +87,34 @@
   }
 }
 // END MOBILE DEVICE MEDIA QUERY FOOTER
+
+//FOOTER LANDSCAPE MODE IN MEDIA QUERY
+@media only screen and (max-width: 768px) {
+  .footer {
+    border-radius: 8px;
+    // margin-top:58px;
+
+    &--header {
+      margin-top: 10px;
+
+      h4 {
+        font-size: 15px;
+        font-weight: 400;
+        .fa-smile {
+          color: yellow;
+        }
+      }
+      p {
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &--body {
+      a i {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+// END FOOTER LANDSCAPE MODE IN MEDIA QUERY

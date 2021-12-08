@@ -80,12 +80,12 @@
 }
 // END HEADER NAV SECTION;
 
-//MOBILE DEVICE MEDIA QUERIES
+//MOBILE DEVICE MEDIA QUERY
 @media only screen and (max-width: 576px) {
   .header {
     background-color: rgb(249, 255, 248);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
   }
   .nav--logo {
@@ -107,4 +107,39 @@
     }
   }
 }
-//END MOBILE DEVICE MEDIA QURIES
+//END MOBILE DEVICE MEDIA QUERY
+//NAV SECTION LANSCAPE MODE  QUERYSELECTOR
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .header {
+    background-color: rgb(249, 255, 248);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav--logo {
+    padding: 9px;
+    &__title {
+      font-size: 23px !important;
+    }
+    &__animate {
+      font-size: 12px;
+    }
+  }
+
+  .nav--menu {
+    display: none;
+    &__icon {
+      padding: 9px;
+      font-size: 25px;
+      display: block !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header {
+    background-color: rgb(255, 0, 157);
+  }
+}
+
+//END NAV SECTION LANDSCAPE MODE QUEREYSECLECTOR

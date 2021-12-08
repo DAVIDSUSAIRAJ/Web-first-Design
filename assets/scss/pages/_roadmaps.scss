@@ -193,3 +193,51 @@
   }
 }
 // END MOBILE DEVICE ROADMAP IN MEDIAQUIRIES
+
+//ROADMAP LANDSCAPE MODE IN MEDIAQUERY
+@media only screen and (min-width:576px) and (max-width: 768px) {
+  .road-map {
+    margin-bottom: 150px;
+    &--items {
+      flex-direction: column;
+      margin-left: 60px;
+
+      .road-map--items1 {
+        flex-direction: column !important;
+        margin-bottom: 55px;
+        position: relative;
+      }
+      .road-map--items__structure {
+        p {
+          width: 200px;
+        }
+      }
+      .road-map--items__rightarrow {
+        position: absolute;
+        left: 93px;
+        top: 250px;
+        transition: 500ms;
+      }
+      .fas5 {
+        transform: rotate(89deg);
+      }
+
+      .fasjs {
+        position: absolute;
+        left: -50px;
+        padding: 10px;
+        margin-bottom: 80px;
+      }
+      .road-map--items1:hover {
+        .road-map--items__rightarrow {
+          position: absolute;
+          left: 93px;
+          top: 300px;
+        }
+      }
+    }
+  }
+}
+
+//END ROADMAP LANDSCAPE MODE IN MEDIAQUERY
+
