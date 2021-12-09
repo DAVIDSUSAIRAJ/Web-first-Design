@@ -49,7 +49,7 @@
           border: 2px solid blue;
         }
       }
-      
+
       .textarea {
         resize: none;
         height: 150px;
@@ -129,3 +129,81 @@
   }
 }
 //END LANDSCAPE MODE IN CONTACT FORM MEDIAQUERY
+
+// CONTACT TABLET DEVICE IN MEDIA QUERY
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .contact {
+    margin-top: 20px;
+    display: initial;
+
+    &-card {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      &--form {
+        width: 100%;
+        padding: 5%;
+        h4 {
+          font-size: 20px;
+        }
+        p {
+          font-size: 15px;
+        }
+      }
+      .send-btn {
+        font-size: 16px;
+      }
+      &--img {
+        img {
+          width: 350px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+
+// END TABLET DEVICE IN MEDIA QUERY
+
+//CONTACT LAPTOP MODE IN MEDIA QUERY
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .contact {
+    &-card {
+      width: 80%;
+      height: 80%;
+      &--form {
+        h4 {
+          font-size: 24px !important;
+
+          padding: 8px;
+        }
+        p {
+          font-size: 17px;
+          font-weight: 200;
+          padding-left: 5px;
+          margin-bottom: 10px;
+          color: rgb(165, 162, 162);
+        }
+        .name,
+        .email,
+        .subject,
+        .textarea {
+          font-size: 17px;
+        }
+        .send-btn {
+          &:hover {
+            background-color: rgb(0, 0, 255);
+          }
+        }
+      }
+      &--img {
+        img {
+          width: 400px;
+          padding-right: 60px;
+        }
+      }
+    }
+  }
+}
+
+// END CONTACT LAPTOP MODE IN MEDIA QUERY

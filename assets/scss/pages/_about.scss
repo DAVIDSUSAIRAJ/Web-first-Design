@@ -11,7 +11,7 @@
   &--image {
     padding: 5px;
     margin-left: 10rem;
-    width: 50%;
+
     &1 {
       width: 30rem;
     }
@@ -49,7 +49,7 @@
     border-radius: 6px;
 
     &--image {
-      margin-right: 18rem;
+      margin-right: 10rem;
 
       &1 {
         margin-top: 10px;
@@ -89,7 +89,7 @@
     border-radius: 6px;
 
     &--image {
-      margin-right: 18rem;
+      margin-right: 10rem;
 
       &1 {
         margin-top: 10px;
@@ -119,3 +119,95 @@
 }
 
 // END ABOUT LANDSCAPE MODE IN MEDIA QUERY
+
+// ABOUT TABLET MODE IN MEDIAQUERY
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .about {
+    background-color: rgb(61, 9, 248);
+    flex-direction: column;
+    margin-top: 40px;
+    border-radius: 6px;
+
+    &--image {
+      margin-right: 10rem;
+
+      &1 {
+        margin-top: 10px;
+        max-width: 600px;
+      }
+    }
+    &-desc {
+      width: 550px;
+      margin-top: 20px !important;
+      margin: auto;
+
+      h1 {
+        font-size: 30px;
+        line-height: 28px;
+        padding: 15px 0px;
+      }
+      p {
+        width: 550px;
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 34px;
+        padding-top: 4px;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}
+
+// END ABOUT LANDSCAPE MODEIN MEDIA QUERY
+
+//ABOUT PAGE LAPTOPMODE IN MEDIA QUERY
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .about {
+    background-color: rgb(53, 53, 204);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 55px !important;
+   
+
+    &--image {
+      padding: 5px;
+      margin-left: 10px !important;
+
+      &1 {
+        width: 28rem;
+        padding: 40px;
+      }
+    }
+
+    &-desc {
+      width: 50%;
+
+      h1 {
+        color: #cfcfcf;
+        font-size: 30px;
+        padding: 10px 0px;
+      }
+      P {
+        margin-top: 8px;
+        color: rgb(179, 171, 171);
+        line-height: 28px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 18px !important;
+
+        a {
+          color: rgb(216, 203, 203);
+          transition: 300ms;
+        }
+        a:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// END ABOUT PAGE LAPTOP IN MEDIA QUERY

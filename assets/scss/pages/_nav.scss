@@ -84,6 +84,7 @@
 @media only screen and (max-width: 576px) {
   .header {
     background-color: rgb(249, 255, 248);
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -108,10 +109,12 @@
   }
 }
 //END MOBILE DEVICE MEDIA QUERY
-//NAV SECTION LANSCAPE MODE  QUERYSELECTOR
+
+//NAV SECTION LANSCAPE MODE  MEDIAQUERY
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .header {
     background-color: rgb(249, 255, 248);
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -136,10 +139,65 @@
   }
 }
 
+//END NAV SECTION LANDSCAPE MODE QUEREYSECLECTOR
+
+//TABLET DEVIICE MEDIAQUERY
+
 @media only screen and (min-width: 768px) and (max-width: 992px) {
   .header {
-    background-color: rgb(255, 0, 157);
+    background-color: rgb(249, 255, 248);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav--logo {
+    padding: 10px;
+    &__title {
+      font-size: 25px !important;
+    }
+    &__animate {
+      font-size: 15px;
+    }
+  }
+
+  .nav--menu {
+    display: none;
+    &__icon {
+      padding: 10px;
+      font-size: 30px;
+      display: block !important;
+    }
+  }
+}
+// END TABLET DEVICE MEDIA QUERY
+
+// NAV SECTION LAPTOP DEVICE IN MEDIA QUERY
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .header {
+    background-color: rgb(249, 255, 248);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .nav--logo {
+    padding: 10px;
+
+    &__title {
+      margin-left: 2px;
+      margin-left: 40px;
+    }
+    &__animate {
+      margin-right: 1px;
+    }
+  }
+
+  .nav--menu {
+    margin-left: 2px;
+    padding: 10px;
   }
 }
 
-//END NAV SECTION LANDSCAPE MODE QUEREYSECLECTOR
+// END NAV SECTION LAPTOP DEVICE IN MEDIAQUE

@@ -89,7 +89,7 @@
 // END MOBILE DEVICE MEDIA QUERY FOOTER
 
 //FOOTER LANDSCAPE MODE IN MEDIA QUERY
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .footer {
     border-radius: 8px;
     // margin-top:58px;
@@ -118,3 +118,67 @@
 }
 
 // END FOOTER LANDSCAPE MODE IN MEDIA QUERY
+// FOOTER TABLET MODE IN MEDIAQUERY
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .footer {
+    border-radius: 8px;
+
+    &--header {
+      h4 {
+        font-size: 18px;
+        font-weight: 400;
+        .fa-smile {
+          color: yellow;
+        }
+      }
+      p {
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+    &--body {
+      a i {
+        font-size: 18px;
+      }
+    }
+    &--footer {
+      P {
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+// END FOOTER TABLET MODE IN MEDIAQUEY
+
+// FOOTER LAPTOP MODE IN MEDIAQUERY
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .footer {
+    border-radius: 8px;
+
+    &--header {
+      margin-top: 1px;
+
+      h4 {
+        font-size: 19px;
+        font-weight: 400;
+        .fa-smile {
+          color: yellow;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    &--body {
+      a i {
+        font-size: 25px !important;
+      }
+    }
+    &--footer {
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+// END FOOTER LAPTOP MODE IN MEDIAQUEY

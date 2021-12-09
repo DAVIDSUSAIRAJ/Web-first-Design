@@ -5,8 +5,6 @@
   align-items: center;
   margin: 5px;
   padding: 5px;
-  // width: 90%;
-  // margin: auto;
   margin-top: 50px;
 
   // SQUARE1 ANIMATES
@@ -325,7 +323,7 @@
 // END MOBILE RESPONSIVE MEDIA QUERIES
 
 //HOME PAGE LANSCAPE MODE IN MEDIAQUERIES
-@media only screen and (min-width: 567px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .hero {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
@@ -385,11 +383,12 @@
 
     &-buttons {
       margin-top: 20px !important;
-      margin-left: 20px !important;
+      margin-left: 70px !important;
       &__video {
         font-size: 12px !important;
         font-weight: 100 !important;
         padding: 10px !important;
+        margin-right: 30px !important;
       }
       &__text {
         font-size: 12px !important;
@@ -405,3 +404,148 @@
 }
 
 // END HOME PAGE LANDSCAPEMODE IN MEDIAQUERIES
+
+//HOMEPAGE TABLET MODE IN MEDIA QUERY
+
+@media only screen and (min-width: 767px) and (max-width: 992px) {
+  .hero {
+    background-color: rgb(255, 255, 255);
+    flex-direction: column;
+    margin-top: 8px !important;
+    position: relative;
+
+    &--animate {
+      z-index: 1;
+      &__square1 {
+        top: 20%;
+        left: 5%;
+      }
+      &__square2 {
+        bottom: 20%;
+        right: 8%;
+      }
+      &__square3 {
+        left: 90%;
+      }
+      &__circle1 {
+        top: 11%;
+      }
+      &__circle3 {
+        width: 12px;
+        height: 12px;
+      }
+      &__heart2 {
+        top: 50%;
+        left: 60%;
+      }
+    }
+    &-des {
+      width: 600px;
+    }
+    &-des__title {
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 45px;
+      width: 550px;
+      margin: auto;
+      padding-top: 20px;
+
+      &__tamil {
+        padding: 12px;
+        font-size: 25px;
+      }
+    }
+    &-desc__para {
+      font-size: 24px !important;
+      font-weight: 400;
+      line-height: 39px !important;
+      width: 600px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    &-buttons {
+      margin-top: 20px !important;
+      margin-left: 40px !important;
+      &__video {
+        font-size: 14px !important;
+        font-weight: 200 !important;
+        padding: 14px !important;
+        margin-right: 30px !important;
+      }
+      &__text {
+        font-size: 14px !important;
+        padding: 14px !important;
+      }
+    }
+
+    &-image-don {
+      max-width: 500px;
+      margin-top: 50px;
+    }
+  }
+}
+
+// END HOMPAGE TABLET MODE IN MEDIA QUERY
+
+// HOME PAGE LABTOP DEVICE IN MEDIA QUERY
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 50px;
+
+    // SQUARE1 ANIMATES
+    &--animate__square1 {
+      top: 15%;
+      left: 18%;
+    }
+    &--animate__square2 {
+      bottom: 10%;
+      right: 15%;
+    }
+
+    &--animate__square3 {
+      top: 10%;
+      right: 20%;
+    }
+
+    // END SQUARE ANIMATES
+
+    // ANIMATE CIRCLES
+    &--animate__circle1 {
+      top: 35%;
+      left: 50%;
+    }
+    &--animate__circle2 {
+      bottom: 10%;
+      left: 20%;
+    }
+    &--animate__circle3 {
+      bottom: 55%;
+      right: 1%;
+    }
+    // END CIRCLE ANIMATES
+
+    // ANIMATE HEARS
+    &--animate__heart1 {
+      bottom: 20%;
+      left: 50%;
+    }
+    &--animate__heart2 {
+      top: 10%;
+      left: 50%;
+    }
+    &--animate__heart3 {
+      bottom: 20%;
+      left: 14%;
+    }
+
+    // END ANIMATE HEARTS
+  }
+}
+
+// END HOME PAGE LABPTOP DEVICE IN MEDIA QUERY
