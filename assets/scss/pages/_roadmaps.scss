@@ -411,3 +411,194 @@
   }
 }
 // END LAPTOP MODE IN MEDIAQUERY
+
+// ROADMAP LARGE LAPTOP AND PC MODE IN MEDIA QUERY
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .road-map {
+    // ROAD MAP CONTENT
+
+    &--content {
+      margin-top: 3rem !important;
+      text-align: center;
+
+      h1 {
+        font-size: 22px;
+        padding: 5px;
+        margin: 5px;
+      }
+
+      P {
+        font-size: 17px;
+
+        letter-spacing: 1px;
+        margin: 5px;
+        padding: 5px;
+        padding-bottom: 20px;
+      }
+    }
+
+    // END ROAD MAP CONTENT
+
+    // START ROADMAP ITEMS
+
+    .road-map--items {
+      margin-left: 100px;
+      margin-bottom: 90px;
+      &1 {
+        margin-left: 50px;
+      }
+
+      &__structure {
+        position: relative;
+        margin-top: 2.8rem;
+
+        cursor: pointer;
+        // img {
+        // }
+        h3 {
+          font-size: 20px;
+
+          margin-top: 10px;
+        }
+
+        P {
+          font-size: 16px;
+          margin-top: 10px;
+
+          line-height: 19px;
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+// END ROADMAP LARGE LAPTOP AND PC MODE IN MEDIA QUERY
+
+// ROADMAP 4K DEVICE MODE IN MEDIA QUERY
+@media only screen and (min-width: 1500px) {
+  .road-map {
+    // ROAD MAP CONTENT
+
+    &--content {
+      margin-top: 5rem;
+
+      h1 {
+        font-size: 25px;
+        padding: 6px;
+        margin: 6px;
+      }
+
+      P {
+        color: gray;
+        font-size: 18px;
+        margin: 5px;
+        padding: 5px;
+        padding-bottom: 22px;
+      }
+
+      .line {
+        margin-top: 20px;
+        width: 120px;
+        height: 10px;
+        border-radius: 20px;
+        margin: auto;
+      }
+    }
+
+    // END ROAD MAP CONTENT
+
+    // START ROADMAP ITEMS
+
+    .road-map--items {
+      padding-bottom: 100px;
+
+      &1 {
+        margin-left: 150px;
+      }
+
+      &__structure {
+        position: relative;
+        margin-top: 3rem;
+
+        img {
+          width: 50px;
+          margin: 2.5rem;
+          margin-left: 42px;
+        }
+        h3 {
+          font-weight: 400px;
+          font-size: 19px;
+          color: blue;
+          margin-top: 10px;
+          margin-left: 15px;
+        }
+
+        P {
+          color: gray;
+          font-size: 16px;
+          margin-top: 10px;
+          margin-left: 15px;
+          font-weight: 200;
+          line-height: 18px;
+          width: 200px;
+        }
+      }
+
+      &__border {
+        position: absolute;
+        top: 14px;
+        left: 20px;
+        width: 100px;
+        height: 100px;
+      }
+    }
+
+    .road-map--items__rightarrow {
+      .fas5 {
+        font-size: 34px;
+        font-weight: 900;
+        right: 20px;
+
+        transition: 400ms;
+      }
+      .fasjs {
+        visibility: hidden;
+        transition: 600ms;
+      }
+    }
+
+    .road-map--items1:hover {
+      .fas5 {
+        right: -100px;
+      }
+
+      .fasjs {
+        visibility: visible;
+      }
+
+      .road-map--items__border {
+        animation-name: dotAnimation;
+        animation-duration: 400ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        @keyframes dotAnimation {
+          0% {
+            transform: rotate(0deg);
+            border-color: blue;
+          }
+          50% {
+            transform: rotate(180deg);
+            border-color: blue;
+          }
+          100% {
+            transform: rotate(360deg);
+            border-color: blue;
+          }
+        }
+      }
+    }
+  }
+}
+
+// END ROADMAP 4K DEVICE MODE IN MEDIA QUERY

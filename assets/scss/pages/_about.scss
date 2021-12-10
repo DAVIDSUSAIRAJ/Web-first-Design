@@ -169,7 +169,6 @@
     align-items: center;
     padding: 1rem;
     margin-top: 55px !important;
-   
 
     &--image {
       padding: 5px;
@@ -211,3 +210,83 @@
 }
 
 // END ABOUT PAGE LAPTOP IN MEDIA QUERY
+
+// ABOUT PAGE LAPTOP AND PC MODE IN MEDEA QUERY
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .about {
+    margin-top: 55px !important;
+
+    &--image {
+      padding: 5px;
+      margin-left: 10px !important;
+
+      &1 {
+        width: 30rem;
+        padding: 40px;
+      }
+    }
+
+    &-desc {
+      width: 50%;
+
+      h1 {
+        color: #cfcfcf;
+        font-size: 30px;
+        padding: 10px 0px;
+      }
+      P {
+        margin-top: 8px;
+        color: rgb(179, 171, 171);
+        line-height: 28px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 20px !important;
+
+        a {
+          color: rgb(216, 203, 203);
+          transition: 300ms;
+        }
+      }
+    }
+  }
+}
+//END ABOUT PAGE LAPTO AND PC MODE IN MEDIA QUERY
+
+//ABOUT PAGE 4K IN MEDIIA QUERY
+
+@media only screen and (min-width: 1500px) {
+  .about {
+    margin-top: 60px !important;
+
+    &--image {
+      padding: 8px;
+      margin-left: 220px !important;
+
+      &1 {
+        width: 40rem;
+        padding: 40px;
+      }
+    }
+
+    &-desc {
+      width: 50%;
+
+      h1 {
+        font-size: 32px;
+        padding: 10px 0px;
+      }
+      P {
+        margin-top: 8px;
+        color: rgb(179, 171, 171);
+        line-height: 32px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        text-align: justify;
+        font-size: 24px !important;
+      }
+    }
+  }
+}
+
+// END ABOUT PAGE 4D IN MEDIA QUERY

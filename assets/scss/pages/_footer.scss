@@ -62,26 +62,29 @@
 @media only screen and (max-width: 576px) {
   .footer {
     border-radius: 8px;
-    // margin-top: 18px;
 
     &--header {
       margin-top: 10px;
 
       h4 {
-        font-size: 15px;
+        font-size: 15px !important;
         font-weight: 400;
-        .fa-smile {
-          color: yellow;
-        }
       }
       p {
-        font-size: 14px;
+        font-size: 14px !important;
         font-weight: 300;
+        padding: 5px !important;
       }
     }
     &--body {
+      margin: 5px 0px !important;
       a i {
-        font-size: 15px;
+        font-size: 15px !important;
+      }
+    }
+    &--footer {
+      p {
+        font-size: 11px !important;
       }
     }
   }
@@ -182,3 +185,76 @@
   }
 }
 // END FOOTER LAPTOP MODE IN MEDIAQUEY
+
+// FOOTER LARGE LAPTOP ADN PC MODE IN MEDIAQUERY
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .footer {
+    border-radius: 8px;
+
+    &--header {
+      margin-top: 1px;
+
+      h4 {
+        font-size: 20px;
+        font-weight: 400;
+        .fa-smile {
+          color: yellow;
+        }
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    &--body {
+      a i {
+        font-size: 25px !important;
+      }
+    }
+    &--footer {
+      p {
+        font-size: 15px !important;
+      }
+    }
+  }
+}
+
+// END FOOTER LARGE LAPTOP AND PC MODE IN MEDIAQUERY
+
+// FOOTER 4K MODE IN MEDIAQUERY
+.footer {
+  height: auto;
+
+  &--header {
+    h4 {
+      font-size: 22px;
+      padding-top: 25px;
+    }
+
+    p {
+      color: rgb(172, 165, 165);
+      font-size: 18px;
+      padding-top: 15px;
+      margin-top: 5px;
+      font-weight: 400;
+    }
+  }
+  &--body {
+    margin: 15px 0px;
+    a i {
+      padding: 6px;
+      margin: 6px;
+      color: rgb(15, 5, 102);
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+
+  &--footer {
+    p {
+      font-size: 14px;
+      padding-bottom: 40px;
+    }
+  }
+}
+
+// END 4K MODE IN MEDIAQUERY

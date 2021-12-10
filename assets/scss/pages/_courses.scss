@@ -267,22 +267,20 @@
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .courses {
-    background-color: rgb(31, 16, 235);
     margin-top: 10px;
     border-radius: 8px;
 
     .courses--header {
       h3 {
-        color: #cfcfcf;
         font-size: 30px;
-        font-weight: 300;
+        font-weight: 600;
       }
       p {
         padding: 10px !important;
         font-size: 16px;
         font-weight: 300;
-        padding: 0px 10px;
-        color: b3abab;
+        padding: 10px 0px;
+
         letter-spacing: 1px;
       }
     }
@@ -297,3 +295,68 @@
 }
 
 // END COURSES LAPTOP MODE IN MEDIAQUERY
+
+// COURSES LAPTOP AND PC MODE IN MEDIAQUERY
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .courses {
+    background-color: rgb(31, 16, 235);
+    margin-top: 10px;
+    border-radius: 8px;
+
+    .courses--header {
+      h3 {
+        color: #cfcfcf;
+        font-size: 30px;
+        font-weight: 800;
+      }
+      p {
+        padding: 10px !important;
+        font-size: 17px;
+        font-weight: 300;
+        padding: 0px 10px;
+        color: b3abab;
+        letter-spacing: 1px;
+      }
+    }
+
+    .courses--footer {
+      font-size: 18px;
+      font-weight: 200;
+      padding-bottom: 50px;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+// END LAPTOP AND PC MODE IN MEDIAQUERY
+
+//COURSES 4K MODE IN MEDIA QUERY
+@media only screen and (min-width: 1500px) {
+  .courses {
+    margin-top: 10px;
+    border-radius: 10px;
+
+    .courses--header {
+      h3 {
+        font-size: 30px;
+        font-weight: 800;
+      }
+      p {
+        padding: 12px !important;
+        font-size: 18px;
+        font-weight: 300;
+        padding: 15px 0px !important;
+
+        letter-spacing: 1px;
+      }
+    }
+
+    .courses--footer {
+      font-size: 18px;
+      font-weight: 200;
+      padding-bottom: 60px;
+      letter-spacing: 1px;
+    }
+  }
+}
+// END 4K MODE IN MEDIA QUERY

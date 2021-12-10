@@ -10,7 +10,7 @@
   .nav--logo {
     &__title {
       font-weight: 900;
-      font-size: 23px;
+      font-size: 25px;
     }
 
     &__animate {
@@ -19,6 +19,7 @@
       animation-iteration-count: infinite;
       animation-duration: 6s;
       transition: 600ms;
+      font-size: 18px;
     }
     @keyframes colorChange {
       0% {
@@ -201,3 +202,48 @@
 }
 
 // END NAV SECTION LAPTOP DEVICE IN MEDIAQUE
+
+// NAV SECTION LARGE LAPTOP AND PC DEVICE IN MEDIAQUERY
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  //ALWAYS OKK ...
+}
+
+// END NAV SECTION LARGE LAPTOP AND PC DEVICE IN MEDIAQUERY
+
+// NAV 4K DEVICE IN MEDIAQUERY
+@media only screen and (min-width: 1500px) {
+  .header {
+    .nav--logo {
+      &__title {
+        font-size: 30px !important;
+      }
+    }
+
+    .nav--menu {
+      &--ul {
+      }
+      &__list a {
+        margin: 12px;
+        padding: 12px;
+        font-weight: 700;
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+        transition: 300ms;
+      }
+
+      &__list button {
+        padding: 12px;
+      }
+
+      &__list button a {
+        padding: 10px;
+      }
+    }
+    .nav--menu__icon {
+      display: none !important;
+    }
+  }
+}
+
+// END NAV 4K  DEVICE IN MEDIAQUERY

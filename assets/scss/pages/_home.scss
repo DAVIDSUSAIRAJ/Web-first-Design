@@ -6,6 +6,7 @@
   margin: 5px;
   padding: 5px;
   margin-top: 50px;
+  position: relative;
 
   // SQUARE1 ANIMATES
   &--animate__square1 {
@@ -497,15 +498,20 @@
     margin: 5px;
     padding: 5px;
     margin-top: 50px;
+    &-desc__para {
+
+      margin-left: 15px;
+    }
 
     // SQUARE1 ANIMATES
     &--animate__square1 {
-      top: 15%;
+      top: 2%;
       left: 18%;
     }
     &--animate__square2 {
-      bottom: 10%;
-      right: 15%;
+      bottom: 40%;
+      right: 25%;
+      z-index: 1;
     }
 
     &--animate__square3 {
@@ -517,11 +523,11 @@
 
     // ANIMATE CIRCLES
     &--animate__circle1 {
-      top: 35%;
+      top: 25%;
       left: 50%;
     }
     &--animate__circle2 {
-      bottom: 10%;
+      bottom: 4%;
       left: 20%;
     }
     &--animate__circle3 {
@@ -536,12 +542,12 @@
       left: 50%;
     }
     &--animate__heart2 {
-      top: 10%;
+      top: 2%;
       left: 50%;
     }
     &--animate__heart3 {
-      bottom: 20%;
-      left: 14%;
+      bottom: 60%;
+      left: 4%;
     }
 
     // END ANIMATE HEARTS
@@ -549,3 +555,254 @@
 }
 
 // END HOME PAGE LABPTOP DEVICE IN MEDIA QUERY
+
+// HOME PAGE LARGE LAPTOP AND PC IN MEDIA QUERY
+
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .hero {
+    &-des {
+      width: 400px !important;
+      margin-right: 80px;
+      &__title {
+        line-height: 55px;
+        &__tamil {
+          font-size: 30px !important;
+        }
+      }
+    }
+
+    .hero-desc__para {
+      margin-top: 20px;
+      margin-left: 15px;
+      line-height: 33px;
+
+      font-size: 22px;
+
+      text-align: justify;
+    }
+    &-image-don {
+      width: 30rem;
+      height: auto;
+      margin-right: 100px;
+    }
+    .hero-buttons {
+      // margin: 22px;
+      &__video {
+        margin-right: 20px;
+        padding: 12px;
+        font-size: 14px;
+        &__icon {
+          padding-right: 6px;
+        }
+      }
+
+      &__text {
+        padding: 12px;
+        font-size: 14px;
+      }
+    }
+    // SQUARE1 ANIMATES
+    &--animate__square1 {
+      top: 2%;
+      left: 18%;
+    }
+    &--animate__square2 {
+      bottom: 40%;
+      right: 25%;
+      z-index: 1;
+    }
+
+    &--animate__square3 {
+      top: 10%;
+      right: 20%;
+    }
+
+    // END SQUARE ANIMATES
+
+    // ANIMATE CIRCLES
+    &--animate__circle1 {
+      top: 25%;
+      left: 50%;
+    }
+    &--animate__circle2 {
+      bottom: 2%;
+      left: 20%;
+    }
+    &--animate__circle3 {
+      bottom: 55%;
+      right: 6%;
+    }
+    // END CIRCLE ANIMATES
+
+    // ANIMATE HEARS
+    &--animate__heart1 {
+      bottom: 20%;
+      left: 50%;
+    }
+    &--animate__heart2 {
+      top: 2%;
+      left: 50%;
+    }
+    &--animate__heart3 {
+      bottom: 65%;
+      left: 35%;
+    }
+
+    // END ANIMATE HEARTS
+  }
+}
+
+// END HOME PAGE LARGE LAPTOP AND PC IN MEDIA QUERY
+
+//HOME PAGE 4K DEVICE IN MEDIA QUERY
+
+@media only screen and (min-width: 1500px) {
+  .hero {
+    display: flex;
+    justify-content: space-around !important;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 50px;
+    position: relative;
+
+    // SQUARE1 ANIMATES
+    &--animate__square1 {
+      top: 3%;
+      left: 18%;
+      width: 20px;
+      height: 20px;
+      border-radius: 30%;
+      border: 4px solid red;
+      transform: rotate(360deg);
+    }
+    &--animate__square2 {
+      bottom: 6%;
+      right: 8%;
+      width: 20px;
+      height: 20px;
+      border-radius: 30%;
+      border: 4px solid red;
+    }
+
+    &--animate__square3 {
+      top: 1%;
+      right: 30%;
+      width: 20px;
+      height: 20px;
+      border-radius: 30%;
+      border: 4px solid red;
+    }
+
+    // END SQUARE ANIMATES
+
+    // ANIMATE CIRCLES
+    &--animate__circle1 {
+      top: 35%;
+      left: 55%;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 4px solid red;
+    }
+    &--animate__circle2 {
+      bottom: 6%;
+      left: 25%;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 4px solid red;
+    }
+    &--animate__circle3 {
+      bottom: 50%;
+      right: 8%;
+      width: 150px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid red;
+    }
+    // END CIRCLE ANIMATES
+
+    // ANIMATE HEARS
+    &--animate__heart1 {
+      bottom: 20%;
+      left: 50%;
+      font-size: 22px;
+    }
+    &--animate__heart2 {
+      top: 1%;
+      left: 50%;
+      font-size: 22px;
+    }
+    &--animate__heart3 {
+      bottom: 50%;
+      left: 14%;
+      font-size: 22px;
+    }
+
+    // END ANIMATE HEARTS
+
+    // HERO DESCRIPTION AND TITLE
+
+    &-des {
+      width: 700px;
+      margin-right: 140px !important;
+      &__title {
+        font-size: 35px;
+        margin: 10px;
+        padding: 10px;
+        &__tamil {
+          padding: 12px;
+          border-radius: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
+
+    // END HERO DISCREPTION AND TITLE
+
+    // HERO DESC PARA
+    .hero-desc__para {
+      margin-top: 30px;
+      margin-left: 16px;
+      line-height: 32px;
+
+      font-size: 24px;
+
+      text-align: justify;
+    }
+    // HERO END DESC PARA
+
+    // HERO VIDEO-BTN AND TEXT BUTTONS
+    .hero-buttons {
+      margin-top: 30px;
+      &__video {
+        margin-right: 25px;
+
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 15px;
+
+        &__icon {
+          padding-right: 7px;
+        }
+      }
+
+      &__text {
+        padding: 15px;
+        font-size: 15px;
+
+        border-radius: 15px;
+      }
+    }
+    // END HERO VIDEO-BTN AND TEXT BUTTONS
+
+    //  DON- IMAGES
+    &-image-don {
+      margin-right: 150px;
+      width: 35rem;
+      height: auto;
+    }
+  }
+}
+//END HOME PAGE 4K DEVICE IN MEDIAQUERY
