@@ -186,9 +186,38 @@
     padding: 10px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+  .nav--logo {
+    padding: 10px;
+    padding-right: 50px !important;
+  }
+  .nav--logo__title {
+    margin-left: 2px;
+  }
+  .nav--logo__animate {
+    margin-right: 1px;
+  }
+
+  .nav--menu {
+    margin-left: 2px;
+    padding: 10px;
+  }
+  .nav--menu--ul {
+    padding-right: 60px;
+  }
+}
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  .nav--logo {
+    padding: 10px;
+  }
+  .nav--logo__title {
+    padding-left: 75px !important;
+  }
+}
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .header .nav--logo__title {
     font-size: 30px !important;
+    margin-left: 30px !important;
   }
   .header .nav--menu__list a {
     margin: 12px;
@@ -686,7 +715,7 @@
     left: 4%;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .hero-des {
     width: 400px !important;
     margin-right: 80px;
@@ -759,7 +788,7 @@
     left: 35%;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .hero {
     display: flex;
     justify-content: space-around !important;
@@ -835,12 +864,10 @@
   }
   .hero-des {
     width: 700px;
-    margin-right: 140px !important;
+    margin-right: 180px !important;
   }
   .hero-des__title {
     font-size: 35px;
-    margin: 10px;
-    padding: 10px;
   }
   .hero-des__title__tamil {
     padding: 12px;
@@ -849,7 +876,7 @@
   }
   .hero .hero-desc__para {
     margin-top: 30px;
-    margin-left: 16px;
+    margin-left: 15px;
     line-height: 32px;
     font-size: 24px;
     text-align: justify;
@@ -1054,20 +1081,20 @@
     color: white;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .about {
     margin-top: 55px !important;
   }
   .about--image {
-    padding: 5px;
-    margin-left: 10px !important;
+    margin-left: 100px !important;
   }
   .about--image1 {
     width: 30rem;
-    padding: 40px;
+    padding: 40px 0px;
   }
   .about-desc {
-    width: 50%;
+    width: 44%;
+    margin-left: 30px !important;
   }
   .about-desc h1 {
     color: #cfcfcf;
@@ -1088,7 +1115,7 @@
     transition: 300ms;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .about {
     margin-top: 60px !important;
   }
@@ -1101,7 +1128,7 @@
     padding: 40px;
   }
   .about-desc {
-    width: 50%;
+    width: 42%;
   }
   .about-desc h1 {
     font-size: 32px;
@@ -1445,7 +1472,7 @@
     visibility: visible;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .road-map--content {
     margin-top: 3rem !important;
     text-align: center;
@@ -1485,7 +1512,7 @@
     width: 200px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .road-map--content {
     margin-top: 5rem;
   }
@@ -1813,7 +1840,7 @@
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .courses {
     background-color: #1f10eb;
     margin-top: 10px;
@@ -1839,7 +1866,7 @@
     letter-spacing: 1px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .courses {
     margin-top: 10px;
     border-radius: 10px;
@@ -2035,7 +2062,7 @@
     padding-right: 60px;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .contact-card {
     width: 80%;
     height: 80%;
@@ -2065,7 +2092,7 @@
     padding-right: 60px;
   }
 }
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .contact-card {
     width: 80%;
     height: 80%;
@@ -2236,7 +2263,7 @@
     font-size: 15px !important;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .footer {
     border-radius: 8px;
   }
@@ -2260,33 +2287,35 @@
     font-size: 15px !important;
   }
 }
-.footer {
-  height: auto;
-}
-.footer--header h4 {
-  font-size: 22px;
-  padding-top: 25px;
-}
-.footer--header p {
-  color: #aca5a5;
-  font-size: 18px;
-  padding-top: 15px;
-  margin-top: 5px;
-  font-weight: 400;
-}
-.footer--body {
-  margin: 15px 0px;
-}
-.footer--body a i {
-  padding: 6px;
-  margin: 6px;
-  color: #0f0566;
-  font-size: 22px;
-  font-weight: 600;
-}
-.footer--footer p {
-  font-size: 14px;
-  padding-bottom: 40px;
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
+  .footer {
+    height: auto;
+  }
+  .footer--header h4 {
+    font-size: 22px;
+    padding-top: 25px;
+  }
+  .footer--header p {
+    color: #aca5a5;
+    font-size: 18px;
+    padding-top: 15px;
+    margin-top: 5px;
+    font-weight: 400;
+  }
+  .footer--body {
+    margin: 15px 0px;
+  }
+  .footer--body a i {
+    padding: 6px;
+    margin: 6px;
+    color: #0f0566;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .footer--footer p {
+    font-size: 14px;
+    padding-bottom: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

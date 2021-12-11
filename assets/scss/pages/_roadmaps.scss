@@ -413,7 +413,7 @@
 // END LAPTOP MODE IN MEDIAQUERY
 
 // ROADMAP LARGE LAPTOP AND PC MODE IN MEDIA QUERY
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .road-map {
     // ROAD MAP CONTENT
 
@@ -476,7 +476,7 @@
 // END ROADMAP LARGE LAPTOP AND PC MODE IN MEDIA QUERY
 
 // ROADMAP 4K DEVICE MODE IN MEDIA QUERY
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .road-map {
     // ROAD MAP CONTENT
 

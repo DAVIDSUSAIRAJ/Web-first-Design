@@ -499,7 +499,6 @@
     padding: 5px;
     margin-top: 50px;
     &-desc__para {
-
       margin-left: 15px;
     }
 
@@ -558,7 +557,7 @@
 
 // HOME PAGE LARGE LAPTOP AND PC IN MEDIA QUERY
 
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .hero {
     &-des {
       width: 400px !important;
@@ -656,7 +655,7 @@
 
 //HOME PAGE 4K DEVICE IN MEDIA QUERY
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .hero {
     display: flex;
     justify-content: space-around !important;
@@ -746,11 +745,9 @@
 
     &-des {
       width: 700px;
-      margin-right: 140px !important;
+      margin-right: 180px !important;
       &__title {
         font-size: 35px;
-        margin: 10px;
-        padding: 10px;
         &__tamil {
           padding: 12px;
           border-radius: 10px;
@@ -764,7 +761,7 @@
     // HERO DESC PARA
     .hero-desc__para {
       margin-top: 30px;
-      margin-left: 16px;
+      margin-left: 15px;
       line-height: 32px;
 
       font-size: 24px;

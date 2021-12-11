@@ -206,17 +206,44 @@
 // NAV SECTION LARGE LAPTOP AND PC DEVICE IN MEDIAQUERY
 
 @media only screen and (min-width: 1200px) and (max-width: 1500px) {
-  //ALWAYS OKK ...
+  .nav--logo {
+    padding: 10px;
+    padding-right: 50px !important;
+    &__title {
+      margin-left: 2px;
+    }
+    &__animate {
+      margin-right: 1px;
+    }
+  }
+
+  .nav--menu {
+    margin-left: 2px;
+    padding: 10px;
+    &--ul {
+      padding-right: 60px;
+    }
+  }
 }
 
+@media only screen and (min-width: 1500px) and (max-width: 2000px) {
+  .nav--logo {
+    padding: 10px;
+
+    &__title {
+      padding-left: 75px !important;
+    }
+  }
+}
 // END NAV SECTION LARGE LAPTOP AND PC DEVICE IN MEDIAQUERY
 
 // NAV 4K DEVICE IN MEDIAQUERY
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .header {
     .nav--logo {
       &__title {
         font-size: 30px !important;
+        margin-left: 30px !important;
       }
     }
 

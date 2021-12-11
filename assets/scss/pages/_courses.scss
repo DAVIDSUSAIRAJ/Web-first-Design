@@ -297,7 +297,7 @@
 // END COURSES LAPTOP MODE IN MEDIAQUERY
 
 // COURSES LAPTOP AND PC MODE IN MEDIAQUERY
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .courses {
     background-color: rgb(31, 16, 235);
     margin-top: 10px;
@@ -331,7 +331,7 @@
 // END LAPTOP AND PC MODE IN MEDIAQUERY
 
 //COURSES 4K MODE IN MEDIA QUERY
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .courses {
     margin-top: 10px;
     border-radius: 10px;

@@ -212,22 +212,22 @@
 // END ABOUT PAGE LAPTOP IN MEDIA QUERY
 
 // ABOUT PAGE LAPTOP AND PC MODE IN MEDEA QUERY
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {
+@media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .about {
     margin-top: 55px !important;
 
     &--image {
-      padding: 5px;
-      margin-left: 10px !important;
+      margin-left: 100px !important;
 
       &1 {
         width: 30rem;
-        padding: 40px;
+        padding: 40px 0px;
       }
     }
 
     &-desc {
-      width: 50%;
+      width: 44%;
+      margin-left: 30px !important;
 
       h1 {
         color: #cfcfcf;
@@ -255,7 +255,7 @@
 
 //ABOUT PAGE 4K IN MEDIIA QUERY
 
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 2000px) and (max-width: 3000px) {
   .about {
     margin-top: 60px !important;
 
@@ -270,7 +270,7 @@
     }
 
     &-desc {
-      width: 50%;
+      width: 42%;
 
       h1 {
         font-size: 32px;
