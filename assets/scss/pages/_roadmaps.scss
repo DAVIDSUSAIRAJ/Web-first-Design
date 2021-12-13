@@ -3,7 +3,7 @@
   // ROAD MAP CONTENT
 
   &--content {
-    margin-top: 6rem;
+    padding-top: 1.5rem;
 
     text-align: center;
 
@@ -152,26 +152,54 @@
 // MOBILE DEVICE ROAD MAP IN MEDIAQUIRES
 @media only screen and (max-width: 576px) {
   .road-map {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
+    &--content {
+      h1 {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 13px;
+        margin: 0% !important;
+      }
+      .line {
+        width: 70px;
+        height: 5px;
+      }
+    }
+
     &--items {
       flex-direction: column;
-      margin-left: 60px;
+      margin-left: 48px;
 
       .road-map--items1 {
         flex-direction: column !important;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
         position: relative;
       }
       .road-map--items__structure {
-        p {
-          width: 200px;
+        margin-top: 1rem;
+        img {
         }
+        h3 {
+          font-size: 14px;
+          padding-left: 20px;
+        }
+        p {
+          width: 170px;
+          font-size: 13px;
+          padding-left: 20px;
+          padding-bottom: 30px;
+        }
+      }
+      &__border {
       }
       .road-map--items__rightarrow {
         position: absolute;
         left: 93px;
-        top: 250px;
-        transition: 500ms;
+        top: 210px;
+        font-size: 13px !important;
+        transition: 400ms;
       }
       .fas5 {
         transform: rotate(89deg);
@@ -186,7 +214,7 @@
         .road-map--items__rightarrow {
           position: absolute;
           left: 93px;
-          top: 300px;
+          top: 253px;
         }
       }
     }
@@ -418,7 +446,7 @@
     // ROAD MAP CONTENT
 
     &--content {
-      margin-top: 3rem !important;
+      padding-top: 3rem !important;
       text-align: center;
 
       h1 {

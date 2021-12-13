@@ -93,6 +93,18 @@
       &--form {
         width: 100%;
         padding: 5%;
+        h4 {
+          font-size: 15px;
+        }
+        p {
+          font-size: 13px;
+        }
+        .name,
+        .email,
+        .subject,
+        .textarea {
+          font-size: 12px;
+        }
       }
       &--img {
         img {

@@ -6,7 +6,6 @@
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
-  margin-top: 5.3rem;
 
   &--image {
     padding: 5px;
@@ -45,31 +44,31 @@
   .about {
     background-color: rgb(61, 9, 248);
     flex-direction: column;
-    margin-top: 40px;
+    margin-top: 4px;
     border-radius: 6px;
 
     &--image {
       margin-right: 10rem;
 
       &1 {
-        margin-top: 10px;
-        max-width: 250px;
+        padding-top: 20px;
+        max-width: 200px;
       }
     }
     &-desc {
-      width: 250px;
+      width: 200px;
       margin-top: 20px !important;
       margin: auto;
 
       h1 {
-        font-size: 22px;
-        line-height: 28px;
+        font-size: 18px;
+        line-height: 24px;
       }
       p {
-        width: 250px;
-        font-size: 16px;
+        width: 200px;
+        font-size: 13px;
         font-weight: 200;
-        line-height: 29px;
+        line-height: 23px;
         padding-top: 4px;
         padding-bottom: 20px;
       }
@@ -214,7 +213,7 @@
 // ABOUT PAGE LAPTOP AND PC MODE IN MEDEA QUERY
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .about {
-    margin-top: 55px !important;
+    margin-top: 25px !important;
 
     &--image {
       margin-left: 100px !important;
