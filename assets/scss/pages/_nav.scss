@@ -89,6 +89,15 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    // nav logo and bar toggle code
+    // position: fixed;
+    // top: 0%;
+    // left: 0;
+    // z-index: 1;
+    // width: 100vw;
+    // margin: 0px;
+    // end nav logo and bar toggle code
   }
   .nav--logo {
     padding: 9px;
@@ -97,16 +106,61 @@
       font-size: 18px !important;
     }
     &__animate {
-      font-size: 10px;
+      font-size: 10px !important;
     }
   }
   .nav--menu {
-    display: none;
+    //nav toggle code
+
+    // NAV--MENU LA DISPLAY:NONE KODUTTHAAL MATTUM .SHOW LA DISPLAY:BLOC; YENDRU KODUKKAVUM. 2) NAV--MENU LA POSITION FIXED KODUTHUTTU DISPLAY NONE KODUKKAMAL TOP RIGHT BOTTOM LEFT LA YEHAVADHU ORU POSITION LA MINUS VALUE KODUTHAAL MARAINDHU VIDUM. PIRAGU .SHOW LA ADHA APPADIYE PLUS VALUE LA MATHUNA VERTICAL MENU SHOW AAGUM.
+
+    // display: none;
+
+    //toggle menu ul code in vertical
+    position: fixed;
+    top: 11.5%;
+    // LEFT IS FIRST AND BEST PRACITSE;
+    // left: -100%;
+    right: -100%;
+
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(238, 231, 231);
+    z-index: 1;
+    transition: 1s;
+
+    &--ul {
+      flex-direction: column;
+      justify-content: space-around;
+      width: 60%;
+      height: 60%;
+      margin: auto;
+      background-color: rgb(238, 231, 231);
+    }
+
+    // NAV--MENU LA DISPLAY NONE KODUTHAAL MATTUME .SHOW LA DISPLAY BLOCK KODUKKANUM. POSITION FIXED VATCHU TOP OR BOTTOM OR LEFT OR RIGHT LA YEDHAVADHU MINUS VALUE KODUTTHAAL .SHOW LA PLUS VALUE VAAGA MAATRI KOLLAVUM;
+
+    &.show {
+      // display: block;
+      // position: fixed;
+      // top: 11.5%;
+      // left: 0%;
+      right: 0%;
+
+      // width: 100vw;
+      // height: 100vh;
+      // background-color: rgb(238, 231, 231);
+      // z-index: 1;
+    }
+
     &__icon {
       padding: 9px;
       font-size: 25px;
       display: block !important;
     }
+  }
+  .hidden {
+    display: none !important;
   }
 }
 //END MOBILE DEVICE MEDIA QUERY
@@ -126,7 +180,7 @@
       font-size: 23px !important;
     }
     &__animate {
-      font-size: 12px;
+      font-size: 12px !important;
     }
   }
 

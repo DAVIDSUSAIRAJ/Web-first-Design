@@ -41,17 +41,18 @@
                 <!-- ========== Start menu-list ========== -->
                 <div class="nav--menu">
                     <ul class="nav--menu--ul">
-                        <li class="nav--menu__list"><a href="#">home</a></li>
-                        <li class="nav--menu__list"><a href="#">about</a></li>
-                        <li class="nav--menu__list"><a href="#">roadmap</a></li>
-                        <li class="nav--menu__list"><a href="#">courses</a></li>
-                        <li class="nav--menu__list"><button><a href="">contact us</a></button> </li>
+                        <li class="nav--menu__list"><a href="#homep">home</a></li>
+                        <li class="nav--menu__list"><a href="#aboutp">about</a></li>
+                        <li class="nav--menu__list"><a href="#roadmapp">roadmap</a></li>
+                        <li class="nav--menu__list"><a href="#coursesp">courses</a></li>
+                        <li class="nav--menu__list"><button><a href="#contactp">contact us</a></button> </li>
 
                     </ul>
 
                 </div>
                 <div class="nav--menu__icon">
-                    <span><i class="fas fa-bars bar-icon"></i></span>
+                    <span><i class="fas fa-bars bar-icon nav-icon"></i></span>
+                    <span><i class="fas fa-times hidden nav-icon"></i></span>
                 </div>
                 <!-- ========== End menu-list ========== -->
             </header>
@@ -60,7 +61,7 @@
         <!-- ========== End Menu ========== -->
 
         <!-- ========== Start Hero ========== -->
-        <div class="hero">
+        <div class="hero" id="homep">
             <div class="hero--animate">
                 <div class="hero--animate__square1"></div>
                 <div class="hero--animate__square2"></div>
@@ -97,7 +98,7 @@
         <!-- ========== End Hero ========== -->
 
         <!-- ========== Start About ========== -->
-        <div class="about">
+        <div class="about" id="aboutp">
             <div class="about--image">
                 <img src="./assets/images/web-development-illustration.png" class="about--image1"
                     alt="web-development-illustration">
@@ -113,7 +114,7 @@
         </div>
         <!-- ========== End About ========== -->
         <!-- ========== Start RoadMap ========== -->
-        <div class="road-map">
+        <div class="road-map" id="roadmapp">
             <div class="road-map--content">
 
                 <h1>Road map to expertise</h1>
@@ -194,7 +195,7 @@
         <!-- ========== End RoadMap ========== -->
 
         <!-- ========== Start Courses ========== -->
-        <div class="courses">
+        <div class="courses" id="coursesp">
             <div class="courses--header">
                 <h3 class="courses--header__h3">Free Courses to Enroll</h3>
                 <p>Start form beggining no pre-requesties required</p>
@@ -294,7 +295,7 @@
 
 
         <!-- ========== Start Contact form ========== -->
-        <div class="contact">
+        <div class="contact" id="contactp">
             <div class="contact-card">
                 <form action="#" method="post" class="contact-card--form">
 
@@ -339,6 +340,8 @@
         </footer>
         <!-- ========== End Footer  ========== -->
     </main>
+
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
