@@ -179,8 +179,7 @@
       }
       .road-map--items__structure {
         margin-top: 1rem;
-        img {
-        }
+
         h3 {
           font-size: 14px;
           padding-left: 20px;
@@ -192,8 +191,7 @@
           padding-bottom: 30px;
         }
       }
-      &__border {
-      }
+
       .road-map--items__rightarrow {
         position: absolute;
         left: 93px;
@@ -225,7 +223,23 @@
 //ROADMAP LANDSCAPE MODE IN MEDIAQUERY
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .road-map {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+    &--content {
+      h1 {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 15px;
+        margin: 0% !important;
+      }
+      .line {
+        width: 80px;
+        height: 6px;
+      }
+    }
+
     &--items {
       flex-direction: column;
       margin-left: 60px;
@@ -236,7 +250,12 @@
         position: relative;
       }
       .road-map--items__structure {
+        h3 {
+          font-size: 15px;
+          padding-left: 20px;
+        }
         p {
+          font-size: 14px;
           width: 200px;
         }
       }
@@ -254,7 +273,7 @@
         position: absolute;
         left: -50px;
         padding: 10px;
-        margin-bottom: 80px;
+        
       }
       .road-map--items1:hover {
         .road-map--items__rightarrow {

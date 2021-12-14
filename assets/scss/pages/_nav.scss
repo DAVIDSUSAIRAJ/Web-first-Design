@@ -5,7 +5,7 @@
   align-items: center;
   border-bottom: 1px solid rgb(238, 232, 232);
   // margin: 5px;
-  padding: 5px;
+  // padding: 5px;
 
   .nav--logo {
     &__title {
@@ -38,6 +38,9 @@
   }
 
   .nav--menu {
+    .active {
+      color: rgb(0, 17, 255);
+    }
     &--ul {
       display: flex;
       list-style-type: none;
@@ -56,22 +59,25 @@
     &__list a:hover {
       color: blue;
     }
-    &__list button {
+    &__list a button {
       background-color: rgb(45, 45, 233);
       border-radius: 8px;
       border: none;
       outline: none;
-      padding: 10px;
+      padding: 19px;
       transition: 300ms;
+      font-size: 15px;
+      cursor: pointer;
     }
     &__list button:hover {
       background-color: rgb(44, 44, 168);
     }
-    &__list button a {
+
+    &__list a button {
       padding: 5px;
       color: white;
     }
-    &__list button a:hover {
+    &__list a button:hover {
       color: white;
     }
   }
@@ -94,9 +100,12 @@
 //MOBILE DEVICE MEDIA QUERY
 @media only screen and (max-width: 576px) {
   .header {
-    background-color: rgb(243, 245, 243);
-    width: 100vw;
-    height: 10vh;
+    background-color: rgb(251, 251, 251);
+    // position: fixed;
+    // top:0%;
+    // scroll-margin-top: 50px;
+    // width: 100vw;
+    // height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -144,6 +153,9 @@
     &--ul li a {
       font-size: 10px !important;
     }
+    &--ul li a button {
+      font-size: 12px !important;
+    }
     // NAV--MENU LA DISPLAY NONE KODUTHAAL MATTUME .SHOW LA DISPLAY BLOCK KODUKKANUM. POSITION FIXED VATCHU TOP OR BOTTOM OR LEFT OR RIGHT LA YEDHAVADHU MINUS VALUE KODUTTHAAL .SHOW LA PLUS VALUE VAAGA MAATRI KOLLAVUM;
 
     &.show {
@@ -173,10 +185,11 @@
 //END MOBILE DEVICE MEDIA QUERY
 
 //NAV SECTION LANSCAPE MODE  MEDIAQUERY
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .header {
     background-color: rgb(249, 255, 248);
-
+  
+ 
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -197,7 +210,7 @@
 
     //toggle menu ul code in vertical
     position: fixed;
-    top: 12%;
+    top: 10%;
     // LEFT IS FIRST AND BEST PRACITSE;
     left: -100%;
     // right: -100%;
@@ -219,6 +232,9 @@
     &--ul li a {
       font-size: 11px !important;
     }
+    &--ul li a button {
+      font-size: 13px !important;
+    }
 
     &.show {
       left: 0%;
@@ -239,7 +255,7 @@
 
 //TABLET DEVIICE MEDIAQUERY
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
   .header {
     background-color: rgb(249, 255, 248);
 
@@ -375,8 +391,6 @@
     }
 
     .nav--menu {
-      &--ul {
-      }
       &__list a {
         margin: 12px;
         padding: 12px;

@@ -5,15 +5,15 @@
   align-items: center;
   margin: 5px;
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 80px;
   position: relative;
 
   // SQUARE1 ANIMATES
   &--animate__square1 {
     top: 15%;
     left: 18%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 30%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -28,8 +28,8 @@
   &--animate__square2 {
     bottom: 10%;
     right: 15%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 30%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -45,8 +45,8 @@
   &--animate__square3 {
     top: 10%;
     right: 20%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 30%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -65,8 +65,8 @@
   &--animate__circle1 {
     top: 35%;
     left: 50%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -81,8 +81,8 @@
   &--animate__circle2 {
     bottom: 10%;
     left: 20%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -97,8 +97,8 @@
   &--animate__circle3 {
     bottom: 50%;
     right: 5%;
-    width: 120px;
-    height: 12px;
+    width: 100px;
+    height: 10px;
     border-radius: 50%;
     border: 2px solid red;
     transform: rotate(360deg);
@@ -271,7 +271,9 @@
   .hero {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    margin-top: 8px !important;
+    margin-top: 58px !important;
+
+    scroll-margin-top: 200px;
 
     &--animate {
       display: none !important;
@@ -302,7 +304,7 @@
 
     &-buttons {
       margin-top: 10px !important;
-  
+
       &__video {
         font-size: 7px !important;
         font-weight: 100 !important;
@@ -328,7 +330,7 @@
   .hero {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    margin-top: 8px !important;
+    margin-top: 58px !important;
     position: relative;
 
     &--animate {
@@ -360,46 +362,46 @@
       width: 400px;
     }
     &-des__title {
-      font-size: 28px;
+      font-size: 18px;
       font-weight: 600;
       line-height: 35px;
       max-width: 400px;
-      margin: auto;
-      padding: 20px;
+      width: 300px;
 
       &__tamil {
         padding: 6px;
-        font-size: 18px;
+        font-size: 15px;
       }
     }
     &-desc__para {
-      font-size: 20px !important;
+      font-size: 15px !important;
       font-weight: 400;
-      line-height: 28px !important;
-      margin-top: 5px !important;
+      line-height: 25px !important;
+      margin-top: 4px !important;
       max-width: 400px;
       margin: auto;
       padding: 20px;
+      letter-spacing: 1px;
     }
 
     &-buttons {
-      margin-top: 20px !important;
-      margin-left: 70px !important;
+      margin-top: 10px !important;
+      margin-left: 20px !important;
       &__video {
-        font-size: 12px !important;
+        font-size: 10px !important;
         font-weight: 100 !important;
-        padding: 10px !important;
-        margin-right: 30px !important;
+        padding: 9px !important;
+        margin-right: 15px !important;
       }
       &__text {
-        font-size: 12px !important;
-        padding: 10px !important;
+        font-size: 10px !important;
+        padding: 8px !important;
       }
     }
 
     &-image-don {
-      max-width: 350px;
-      margin-top: 20px;
+      max-width: 250px;
+      margin-top: 50px;
     }
   }
 }

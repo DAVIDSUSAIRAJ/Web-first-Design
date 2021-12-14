@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  scroll-margin-top: 35px;
+  scroll-margin-top: 45px;
 }
 
 .header {
@@ -13,7 +13,6 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #eee8e8;
-  padding: 5px;
 }
 .header .nav--logo__title {
   font-weight: 900;
@@ -41,6 +40,9 @@
     color: blue;
   }
 }
+.header .nav--menu .active {
+  color: #0011ff;
+}
 .header .nav--menu--ul {
   display: flex;
   list-style-type: none;
@@ -59,22 +61,24 @@
 .header .nav--menu__list a:hover {
   color: blue;
 }
-.header .nav--menu__list button {
+.header .nav--menu__list a button {
   background-color: #2d2de9;
   border-radius: 8px;
   border: none;
   outline: none;
-  padding: 10px;
+  padding: 19px;
   transition: 300ms;
+  font-size: 15px;
+  cursor: pointer;
 }
 .header .nav--menu__list button:hover {
   background-color: #2c2ca8;
 }
-.header .nav--menu__list button a {
+.header .nav--menu__list a button {
   padding: 5px;
   color: white;
 }
-.header .nav--menu__list button a:hover {
+.header .nav--menu__list a button:hover {
   color: white;
 }
 .header .nav--menu__icon {
@@ -94,9 +98,7 @@
 
 @media only screen and (max-width: 576px) {
   .header {
-    background-color: #f3f5f3;
-    width: 100vw;
-    height: 10vh;
+    background-color: #fbfbfb;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -134,6 +136,9 @@
   .nav--menu--ul li a {
     font-size: 10px !important;
   }
+  .nav--menu--ul li a button {
+    font-size: 12px !important;
+  }
   .nav--menu.show {
     top: 10%;
   }
@@ -148,7 +153,7 @@
     display: none !important;
   }
 }
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen and (min-width: 576px) and (max-width: 767px) {
   .header {
     background-color: #f9fff8;
     display: flex;
@@ -168,7 +173,7 @@
 
   .nav--menu {
     position: fixed;
-    top: 12%;
+    top: 10%;
     left: -100%;
     width: 100vw;
     height: 100vh;
@@ -187,6 +192,9 @@
   .nav--menu--ul li a {
     font-size: 11px !important;
   }
+  .nav--menu--ul li a button {
+    font-size: 13px !important;
+  }
   .nav--menu.show {
     left: 0%;
   }
@@ -200,7 +208,7 @@
     display: none !important;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 767px) and (max-width: 992px) {
   .header {
     background-color: #f9fff8;
     display: flex;
@@ -331,14 +339,14 @@
   align-items: center;
   margin: 5px;
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 80px;
   position: relative;
 }
 .hero--animate__square1 {
   top: 15%;
   left: 18%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 30%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -353,8 +361,8 @@
 .hero--animate__square2 {
   bottom: 10%;
   right: 15%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 30%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -369,8 +377,8 @@
 .hero--animate__square3 {
   top: 10%;
   right: 20%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 30%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -385,8 +393,8 @@
 .hero--animate__circle1 {
   top: 35%;
   left: 50%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -401,8 +409,8 @@
 .hero--animate__circle2 {
   bottom: 10%;
   left: 20%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -417,8 +425,8 @@
 .hero--animate__circle3 {
   bottom: 50%;
   right: 5%;
-  width: 120px;
-  height: 12px;
+  width: 100px;
+  height: 10px;
   border-radius: 50%;
   border: 2px solid red;
   transform: rotate(360deg);
@@ -559,7 +567,8 @@
   .hero {
     background-color: white;
     flex-direction: column;
-    margin-top: 8px !important;
+    margin-top: 58px !important;
+    scroll-margin-top: 200px;
   }
   .hero--animate {
     display: none !important;
@@ -607,7 +616,7 @@
   .hero {
     background-color: white;
     flex-direction: column;
-    margin-top: 8px !important;
+    margin-top: 58px !important;
     position: relative;
   }
   .hero--animate {
@@ -639,43 +648,43 @@
     width: 400px;
   }
   .hero-des__title {
-    font-size: 28px;
+    font-size: 18px;
     font-weight: 600;
     line-height: 35px;
     max-width: 400px;
-    margin: auto;
-    padding: 20px;
+    width: 300px;
   }
   .hero-des__title__tamil {
     padding: 6px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .hero-desc__para {
-    font-size: 20px !important;
+    font-size: 15px !important;
     font-weight: 400;
-    line-height: 28px !important;
-    margin-top: 5px !important;
+    line-height: 25px !important;
+    margin-top: 4px !important;
     max-width: 400px;
     margin: auto;
     padding: 20px;
+    letter-spacing: 1px;
   }
   .hero-buttons {
-    margin-top: 20px !important;
-    margin-left: 70px !important;
+    margin-top: 10px !important;
+    margin-left: 20px !important;
   }
   .hero-buttons__video {
-    font-size: 12px !important;
+    font-size: 10px !important;
     font-weight: 100 !important;
-    padding: 10px !important;
-    margin-right: 30px !important;
+    padding: 9px !important;
+    margin-right: 15px !important;
   }
   .hero-buttons__text {
-    font-size: 12px !important;
-    padding: 10px !important;
+    font-size: 10px !important;
+    padding: 8px !important;
   }
   .hero-image-don {
-    max-width: 350px;
-    margin-top: 20px;
+    max-width: 250px;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 992px) {
@@ -1071,7 +1080,7 @@
   }
   .about--image1 {
     margin-top: 10px;
-    max-width: 400px;
+    max-width: 250px;
   }
   .about-desc {
     width: 350px;
@@ -1079,15 +1088,17 @@
     margin: auto;
   }
   .about-desc h1 {
-    font-size: 25px;
-    line-height: 28px;
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    word-spacing: 0.6px;
     padding: 10px 0px;
   }
   .about-desc p {
     width: 350px;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 200;
-    line-height: 30px;
+    line-height: 25px;
+    letter-spacing: 0.7px;
     padding-top: 4px;
     padding-bottom: 20px;
   }
@@ -1410,7 +1421,20 @@
 }
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .road-map {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
+    margin-top: 30px;
+  }
+  .road-map--content h1 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .road-map--content p {
+    font-size: 15px;
+    margin: 0% !important;
+  }
+  .road-map--content .line {
+    width: 80px;
+    height: 6px;
   }
   .road-map--items {
     flex-direction: column;
@@ -1421,7 +1445,12 @@
     margin-bottom: 55px;
     position: relative;
   }
+  .road-map--items .road-map--items__structure h3 {
+    font-size: 15px;
+    padding-left: 20px;
+  }
   .road-map--items .road-map--items__structure p {
+    font-size: 14px;
     width: 200px;
   }
   .road-map--items .road-map--items__rightarrow {
@@ -1437,7 +1466,6 @@
     position: absolute;
     left: -50px;
     padding: 10px;
-    margin-bottom: 80px;
   }
   .road-map--items .road-map--items1:hover .road-map--items__rightarrow {
     position: absolute;
@@ -1847,11 +1875,11 @@
   }
   .courses .courses--header h3 {
     color: #cfcfcf;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 300;
   }
   .courses .courses--header p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 200;
     padding: 0px 10px;
     color: b3abab;
@@ -1863,23 +1891,22 @@
   }
   .courses--body__card {
     margin-bottom: 22px;
-    width: 500px;
+    width: 300px;
   }
   .courses--body__card__atag__img__ui {
-    width: 500px;
-    height: 300px;
+    width: 300px;
   }
   .courses--body__card__atag__desc h4 {
-    font-size: 24px;
+    font-size: 18px;
   }
   .courses--body__card__atag__desc p {
-    font-size: 18px;
+    font-size: 15px;
     line-height: 24px;
     margin-top: 4px;
     padding-bottom: 30px;
   }
   .courses .courses--footer {
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 200;
     padding-bottom: 50px;
   }

@@ -92,7 +92,7 @@
 
       &1 {
         margin-top: 10px;
-        max-width: 400px;
+        max-width: 250px;
       }
     }
     &-desc {
@@ -101,15 +101,17 @@
       margin: auto;
 
       h1 {
-        font-size: 25px;
-        line-height: 28px;
+        font-size: 18px;
+        letter-spacing: 0.6px;
+        word-spacing: 0.6px;
         padding: 10px 0px;
       }
       p {
         width: 350px;
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 200;
-        line-height: 30px;
+        line-height: 25px;
+        letter-spacing: 0.7px;
         padding-top: 4px;
         padding-bottom: 20px;
       }
