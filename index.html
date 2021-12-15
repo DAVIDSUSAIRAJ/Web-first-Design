@@ -315,7 +315,7 @@
         <section id="contactp">
             <div class="contact">
                 <div class="contact-card">
-                    <form action="#" method="post" class="contact-card--form">
+                    <form id="form" onsubmit="validateForm()" class="contact-card--form">
 
                         <h4>Send us a Message</h4>
                         <p>Share your info breifely as possible</p>
@@ -327,7 +327,7 @@
                         <input type="text" name="subject" placeholder="Subject" class="subject" required><br>
                         <textarea name="textarea" id="textarea" class="textarea"
                             placeholder="Share your message in detial" required></textarea><br>
-                        <button class="send-btn">send</button>
+                        <button class="send-btn" type="submit">send</button>
 
                     </form>
                     <div class="contact-card--img">
@@ -360,6 +360,12 @@
     </main>
 
     <script src="./assets/js/main.js"></script>
+    <script>
+        function validateForm(params) {
+            alert("Form has submited");
+        }
+    </script>
+
 </body>
 
 </html>
