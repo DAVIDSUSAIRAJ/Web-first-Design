@@ -124,9 +124,6 @@
       &__card {
         margin-bottom: 22px;
 
-        &__atag__img__ui {
-          width: 280px;
-        }
         &__atag__desc {
           h4 {
             font-size: 15px;
@@ -144,7 +141,7 @@
       font-size: 13px;
       font-weight: 200;
       margin-top: 0px !important;
-      padding-bottom: 20px;
+      padding-bottom: 30px;
     }
   }
 }
@@ -183,8 +180,6 @@
 
         &__atag__img__ui {
           width: 300px;
-          
-          
         }
         &__atag__desc {
           h4 {
@@ -278,7 +273,8 @@
 
     .courses--header {
       h3 {
-        font-size: 30px;
+        font-size: 24px;
+        letter-spacing: 1px;
         font-weight: 600;
       }
       p {
@@ -306,18 +302,18 @@
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .courses {
     background-color: rgb(31, 16, 235);
-    margin-top: 10px;
+   
     border-radius: 8px;
 
     .courses--header {
       h3 {
         color: #cfcfcf;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 800;
       }
       p {
         padding: 10px !important;
-        font-size: 17px;
+        font-size: 16px;
         font-weight: 300;
         padding: 0px 10px;
         color: b3abab;

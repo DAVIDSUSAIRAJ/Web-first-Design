@@ -3,15 +3,13 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 5px;
-  padding: 5px;
-  margin-top: 80px;
+  padding-top: 80px;
   position: relative;
 
   // SQUARE1 ANIMATES
   &--animate__square1 {
-    top: 15%;
-    left: 18%;
+    top: 18% !important;
+    left: 20% !important;
     width: 10px;
     height: 10px;
     border-radius: 30%;
@@ -43,7 +41,7 @@
   }
 
   &--animate__square3 {
-    top: 10%;
+    top: 13% !important;
     right: 20%;
     width: 10px;
     height: 10px;
@@ -79,8 +77,8 @@
     z-index: -1;
   }
   &--animate__circle2 {
-    bottom: 10%;
-    left: 20%;
+    bottom: 11% !important;
+    left: 30% !important;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -96,7 +94,7 @@
   }
   &--animate__circle3 {
     bottom: 50%;
-    right: 5%;
+    right: 8% !important;
     width: 100px;
     height: 10px;
     border-radius: 50%;
@@ -125,6 +123,7 @@
     animation-timing-function: linear;
     transition: 300ms;
     z-index: -1;
+    font-size: 10px;
   }
   &--animate__heart2 {
     top: 10%;
@@ -138,10 +137,11 @@
     animation-timing-function: linear;
     transition: 300ms;
     z-index: -1;
+    font-size: 10px;
   }
   &--animate__heart3 {
-    bottom: 50%;
-    left: 14%;
+    bottom: 50% !important;
+    left: 54% !important;
     color: blue;
     transform: rotate(360deg);
     position: absolute;
@@ -151,6 +151,7 @@
     animation-timing-function: linear;
     transition: 300ms;
     z-index: -1;
+    font-size: 10px;
   }
 
   // END ANIMATE HEARTS
@@ -271,7 +272,7 @@
   .hero {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    margin-top: 58px !important;
+    padding-top: 70px !important;
 
     scroll-margin-top: 200px;
 
@@ -330,7 +331,7 @@
   .hero {
     background-color: rgb(255, 255, 255);
     flex-direction: column;
-    margin-top: 58px !important;
+    padding-top: 78px !important;
     position: relative;
 
     &--animate {
@@ -446,16 +447,17 @@
       width: 600px;
     }
     &-des__title {
-      font-size: 35px;
+      font-size: 28px;
       font-weight: 600;
-      line-height: 45px;
-      width: 550px;
-      margin: auto;
+      line-height: 55px;
+      width: 400px;
+      margin-left: 35px;
+
       padding-top: 20px;
 
       &__tamil {
         padding: 12px;
-        font-size: 25px;
+        font-size: 24px;
       }
     }
     &-desc__para {
@@ -463,13 +465,14 @@
       font-weight: 400;
       line-height: 39px !important;
       width: 600px;
+      width: 500px;
       margin: auto;
-      padding: 20px;
+      padding-bottom: 20px;
     }
 
     &-buttons {
       margin-top: 20px !important;
-      margin-left: 40px !important;
+      margin-left: 50px !important;
       &__video {
         font-size: 14px !important;
         font-weight: 200 !important;
@@ -483,7 +486,7 @@
     }
 
     &-image-don {
-      max-width: 500px;
+      max-width: 400px;
       margin-top: 50px;
     }
   }
@@ -497,11 +500,33 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 5px;
-    padding: 5px;
-    margin-top: 50px;
+    padding-top: 100px !important;
+    padding-bottom: 60px;
+    &-des {
+      width: 350px;
+      &__title {
+        color: rgb(11, 12, 12);
+        margin: 5px;
+        padding: 5px;
+        font-size: 20px;
+        line-height: 40px;
+        &__tamil {
+          background-color: blue;
+          padding: 10px;
+          font-size: 20px !important;
+
+          border-radius: 10px;
+          color: rgb(255, 255, 255);
+        }
+      }
+    }
     &-desc__para {
-      margin-left: 15px;
+      margin-left: 5px !important;
+      font-size: 16px !important;
+    }
+    &-image-don {
+      width: 18rem;
+      padding-top: 30px;
     }
 
     // SQUARE1 ANIMATES
@@ -532,8 +557,10 @@
       left: 20%;
     }
     &--animate__circle3 {
-      bottom: 55%;
-      right: 1%;
+      bottom: 50%;
+      right: 5%;
+      width: 10px;
+      height: 10px;
     }
     // END CIRCLE ANIMATES
 
@@ -561,13 +588,15 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 2000px) {
   .hero {
+    padding: 138px 0px;
     &-des {
       width: 400px !important;
       margin-right: 80px;
       &__title {
         line-height: 55px;
+        font-size: 28px;
         &__tamil {
-          font-size: 30px !important;
+          font-size: 24px !important;
         }
       }
     }
@@ -577,12 +606,12 @@
       margin-left: 15px;
       line-height: 33px;
 
-      font-size: 22px;
+      font-size: 18px;
 
       text-align: justify;
     }
     &-image-don {
-      width: 30rem;
+      width: 21rem;
       height: auto;
       margin-right: 100px;
     }
@@ -591,7 +620,7 @@
       &__video {
         margin-right: 20px;
         padding: 12px;
-        font-size: 14px;
+        font-size: 12px;
         &__icon {
           padding-right: 6px;
         }
@@ -599,7 +628,7 @@
 
       &__text {
         padding: 12px;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
     // SQUARE1 ANIMATES
@@ -626,7 +655,7 @@
       left: 50%;
     }
     &--animate__circle2 {
-      bottom: 2%;
+      bottom: 5%;
       left: 20%;
     }
     &--animate__circle3 {

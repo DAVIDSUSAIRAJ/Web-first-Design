@@ -1,17 +1,22 @@
-const navToggler = document.querySelector(".nav--menu__icon");
 
-navToggler.addEventListener("click", () => {
-  const togglerMenu = document.querySelector(".nav--menu");
 
-  const navIcon = document.querySelectorAll(".nav-icon");
+// NAV TOGGLE, OPEN AND CLOSE BUTTON WITH DEYNAMIC MENU IN MOBILE; 
+function navToggleButton(params) {
+  const navToggler = document.querySelector(".nav--menu__icon");
+  navToggler.addEventListener("click", () => {
+    const togglerMenu = document.querySelector(".nav--menu");
 
-  togglerMenu.classList.toggle("show");
+    const navIcon = document.querySelectorAll(".nav-icon");
 
-  navIcon.forEach((icon) => {
-    icon.classList.toggle("hidden");
+    togglerMenu.classList.toggle("show");
+
+    navIcon.forEach((icon) => {
+      icon.classList.toggle("hidden");
+    });
   });
-});
+}
 
+navToggleButton();
 // NAVBAR FIXED WITH SCROLL BAR
 
 function navbarFixed(params) {
@@ -54,3 +59,23 @@ function setMenuActive(params) {
   });
 }
 setMenuActive();
+
+// ON MENU CLICK IN MOBILE VIEW
+
+function onMenuClick(params) {
+  const navLinks = document.querySelectorAll(".nav--menu__list>a");
+  for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", () => {
+      const togglerMenu = document.querySelector(".nav--menu");
+
+      const navIcon = document.querySelectorAll(".nav-icon");
+
+      togglerMenu.classList.toggle("show");
+
+      navIcon.forEach((icon) => {
+        icon.classList.toggle("hidden");
+      });
+    });
+  }
+}
+onMenuClick();
