@@ -2110,10 +2110,11 @@
   margin: 5px;
   padding: 10px;
   width: 100%;
-  border: none;
+  border: 2px solid transparent;
   outline: none;
   border-radius: 5px;
   background-color: #dbd6d6;
+  transition: all 0.3s ease-in;
 }
 .contact-card--form .name:focus,
 .contact-card--form .email:focus,
